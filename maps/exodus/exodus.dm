@@ -5,12 +5,14 @@
 	#include "exodus_unit_testing.dm"
 	#include "exodus_holodecks.dm"
 
+	#include "exodus-0.dmm"
 	#include "exodus-1.dmm"
 	#include "exodus-2.dmm"
 	#include "exodus-3.dmm"
 	#include "exodus-4.dmm"
 	#include "exodus-5.dmm"
 	#include "exodus-6.dmm"
+	#include "exodus-7.dmm"
 
 	#define USING_MAP_DATUM /datum/map/exodus
 
