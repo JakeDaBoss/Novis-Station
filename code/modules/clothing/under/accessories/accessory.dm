@@ -113,6 +113,12 @@
 	desc = "A neosilk clip-on tie. This one is disgusting."
 	icon_state = "horribletie"
 
+/obj/item/clothing/accessory/aviskree
+	name = "Aviskree Medallion"
+	desc = "A Silver Medallion on a chain, a name is written on it in Aviachirp"
+	icon_state = "Aneck"
+	item_state = "Aneck"
+
 /obj/item/clothing/accessory/stethoscope
 	name = "stethoscope"
 	desc = "An outdated medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing."

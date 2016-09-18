@@ -144,6 +144,13 @@
 	species_restricted = null
 	w_class = 2
 
+/obj/item/clothing/shoes/clothboots
+	name = "cloth wraps"
+	desc = "Specially treate clothen wraps used as foot covering digitigrade feet."
+	icon_state = "digit-cloth"
+	item_state = "digit-cloth"
+	w_class = 2
+
 /obj/item/clothing/shoes/slippers_worn
 	name = "worn bunny slippers"
 	desc = "Fluffy..."

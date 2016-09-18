@@ -296,3 +296,27 @@
 			qdel(D)
 
 	H.visible_message("<span class='danger'>\The [H] splits apart with a wet slithering noise!</span>")
+
+
+/datum/species/Aviskree //Couple of placeholders here.
+	name = "Aviskree"
+	icobase = 'icons/mob/human_races/r_Aviskree.dmi'
+	deform = 'icons/mob/human_races/r_def_Aviskree.dmi'
+	language = "Aviachirp"
+	tail = "aviskreetail"
+	blurb = "A tall avian species, Aviskree originally hail from Avis, of the Aindege system, \
+ 	a heavily forested planet of avian species, <br/> <br/> The Aviskree live in a tradition \
+ 	heavy society with a tech level resembling that of early 2000s earth with advances in electricity. \
+ 	They are still acclimating to human society, and their native language is Aviachirp, a language made mostly of high pitched chirps."
+	gluttonous = GLUT_TINY
+	spawn_flags =  CAN_JOIN | IS_WHITELISTED
+	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_COLOR | HAS_EYE_COLOR
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
+	num_alternate_languages = 2
+	secondary_langs = list(LANGUAGE_AVISKREE)
+	darksight = 5
+	max_age = 150
+	min_age = 15
+	brute_mod = 1.6
+	slowdown = -1
+	health_hud_intensity = 2

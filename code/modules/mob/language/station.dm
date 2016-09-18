@@ -135,6 +135,25 @@
 /datum/language/resomi/get_random_name(gender)
 	return ..(gender, 1, 4, 1.5)
 
+/datum/language/Aviskree
+	name = "Aviachirp"
+	desc = "An expressive language is very beautiful execpt when you want to sleep."
+	speech_verb = "chirps"
+	ask_verb = "chirrups"
+	exclaim_verb = "trills"
+	colour = "aviskree"
+	key = "y"
+	flags = WHITELISTED
+
+/datum/language/aviskree/get_random_name(var/gender)  //Placeholder until concrete naming scheme is thought up, and to prevent Wahbleh names.
+	if (prob(80))
+		if(gender==FEMALE)
+			return capitalize(pick(first_names_female)) + " " + capitalize(pick(last_names))
+		else
+			return capitalize(pick(first_names_male)) + " " + capitalize(pick(last_names))
+	else
+		return ..()
+
 //Syllable Lists
 /*
 	This list really long, mainly because I can't make up my mind about which mandarin syllables should be removed,
