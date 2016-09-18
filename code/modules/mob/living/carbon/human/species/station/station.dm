@@ -318,5 +318,4 @@
 	max_age = 150
 	min_age = 15
 	brute_mod = 1.6
-	slowdown = -1
 	health_hud_intensity = 2
