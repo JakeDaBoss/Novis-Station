@@ -314,6 +314,7 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
 	num_alternate_languages = 2
 	secondary_langs = list(LANGUAGE_AVISKREE)
+	name_language = LANGUAGE_AVISKREE
 	darksight = 5
 	max_age = 150
 	min_age = 15

@@ -144,15 +144,12 @@
 	colour = "aviskree"
 	key = "y"
 	flags = WHITELISTED
-
-/datum/language/aviskree/get_random_name(var/gender)  //Placeholder until concrete naming scheme is thought up, and to prevent Wahbleh names.
-	if (prob(80))
-		if(gender==FEMALE)
-			return capitalize(pick(first_names_female)) + " " + capitalize(pick(last_names))
-		else
-			return capitalize(pick(first_names_male)) + " " + capitalize(pick(last_names))
-	else
-		return ..()
+	space_chance = 50
+	syllables = list(
+			"he", "yo", "te", "ni", "ka", "zi", "ma", "ta", "fa", "an", "el",
+			"ya", "ha", "zi", "di", "ti", "ku", "de", "le", "lo", "sh", "lo",
+			"ae", "ga", "gi", "go", "ki", "hi", "fo", "fi", "li", "mi", "ma"
+		)
 
 //Syllable Lists
 /*
