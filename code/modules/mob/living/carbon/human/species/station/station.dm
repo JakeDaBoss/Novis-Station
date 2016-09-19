@@ -320,3 +320,4 @@
 	min_age = 15
 	brute_mod = 1.6
 	health_hud_intensity = 2
+	reagent_tag = IS_AVISKREE
