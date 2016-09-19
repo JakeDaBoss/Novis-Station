@@ -5,7 +5,5 @@ DIR: code code\controllers\Processes code\datums code\datums\extensions code\dat
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1347
-WINDOW: maps\exodus\exodus-0.dmm;maps\exodus\exodus-1.dmm;maps\exodus\exodus-2.dmm;code\game\jobs\access.dm;code\game\jobs\jobs.dm;code\game\jobs\_access_defs.dm;code\game\jobs\access_datum.dm
-FILE: maps\exodus\exodus-2.dmm
 */
 // END_INTERNALS
