@@ -4,7 +4,7 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 
 /client/verb/adminhelp(msg as text)
 	set category = "Admin"
-	set name = "Adminhelp"
+	set name = "Request Assistance"
 
 	//handle muting and automuting
 	if(prefs.muted & MUTE_ADMINHELP)
@@ -12,6 +12,15 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 		return
 
 	adminhelped = 1 //Determines if they get the message to reply by clicking the name.
+
+	spawn(300) // 30 Seconds
+		src.verbs += /client/verb/adminhelp	// 2 minute cool-down for adminhelps//Go to hell
+
+	var/mesg
+	var/list/type = list ("Gameplay/Job Inquiries", "Rule Issue", "Technical Issue", "Other")
+	var/selected_type = input("Pick a category.", "Admin Help", null, null) as null|anything in type
+	if(selected_type)
+		mesg = input("Please enter your message:", "Admin Help", null, null) as text
 
 
 	//clean the input msg
@@ -90,7 +99,68 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 
 	var/admin_number_afk = 0
 
+	var/list/mentorholders = list()
+/*	var/list/debugholders = list()*/
+	var/list/modholders = list()
+	var/list/adminholders = list()
 	for(var/client/X in admins)
+		if(R_MENTOR & X.holder.rights && !(R_ADMIN & X.holder.rights)) // we don't want to count admins twice. This list should be JUST mentors
+			mentorholders += X
+			if(X.is_afk())
+				admin_number_afk++
+/*		if(R_DEV & X.holder.rights || R_DEBUG & X.holder.rights) // Looking for anyone with +Debug which will be admins, developers, and developer mentors
+			debugholders += X
+			if(!(R_ADMIN & X.holder.rights))
+				if(X.is_afk())
+					admin_number_afk++
+*/
+		if(R_MOD & X.holder.rights || R_BAN & X.holder.rights) // Looking for anyone with +Debug which will be admins, developers, and developer mentors
+			modholders += X
+			if(!(R_ADMIN & X.holder.rights))
+				if(X.is_afk())
+					admin_number_afk++
+		if(R_ADMIN & X.holder.rights || R_ADMIN & X.holder.rights) // just admins here please
+			adminholders += X
+			if(X.is_afk())
+				admin_number_afk++
+
+	switch(selected_type)
+		if("Gameplay/Job Inquiries")
+			if(mentorholders.len)
+				for(var/client/X in mentorholders) // Mentors get a message without buttons and no character name
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mentor_msg
+			if(adminholders.len)
+				for(var/client/X in adminholders) // Admins get the full monty
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << msg
+		if("Rule Issue")
+			if(modholders.len)
+				for(var/client/X in modholders) // Mods
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << msg
+			if(adminholders.len)
+				for(var/client/X in adminholders) // Admins get the full monty
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << msg
+		if("Other")
+			if(mentorholders.len)
+				for(var/client/X in mentorholders) // Admins of course get everything in their helps
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mentor_msg
+			if(adminholders.len)
+				for(var/client/X in adminholders) // Admins get the full monty
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << msg
+
+
+/*	for(var/client/X in admins)
 		if((R_ADMIN|R_MOD|R_MENTOR) & X.holder.rights)
 			if(X.is_afk())
 				admin_number_afk++
@@ -99,7 +169,7 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			if(X.holder.rights == R_MENTOR)
 				X << mentor_msg		// Mentors won't see coloring of names on people with special_roles (Antags, etc.)
 			else
-				X << msg
+				X << msg*/
 
 	//show it to the person adminhelping too
 	src << "<font color='blue'>PM to-<b>Staff </b>: [original_msg]</font>"
