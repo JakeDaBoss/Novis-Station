@@ -51,11 +51,12 @@
 		name = "Bald"
 		icon_state = "bald"
 		gender = MALE
-		species_allowed = list("Human","Unathi")
+		species_allowed = list("Human","Unathi","Aviskree")
 
 	short
 		name = "Short Hair"	  // try to capatilize the names please~
 		icon_state = "hair_a" // you do not need to define _s or _l sub-states, game automatically does this for you
+		species_allowed = list("Human","Aviskree")
 
 	short2
 		name = "Short Hair 2"
@@ -169,14 +170,17 @@
 	bedhead
 		name = "Bedhead"
 		icon_state = "hair_bedhead"
+		species_allowed = list("Human","Aviskree")
 
 	bedhead2
 		name = "Bedhead 2"
 		icon_state = "hair_bedheadv2"
+		species_allowed = list("Human","Aviskree")
 
 	bedhead3
 		name = "Bedhead 3"
 		icon_state = "hair_bedheadv3"
+		species_allowed = list("Human","Aviskree")
 
 	beehive
 		name = "Beehive"
@@ -293,6 +297,7 @@
 	feather
 		name = "Feather"
 		icon_state = "hair_feather"
+		species_allowed = list("Human","Aviskree")
 
 	hitop
 		name = "Hitop"
@@ -321,7 +326,7 @@
 	spiky
 		name = "Spiky"
 		icon_state = "hair_spikey"
-		species_allowed = list("Human","Unathi")
+		species_allowed = list("Human","Unathi","Aviskree")
 	kusangi
 		name = "Kusanagi Hair"
 		icon_state = "hair_kusanagi"
@@ -449,7 +454,7 @@
 	bun
 		name = "Low Bun"
 		icon_state = "hair_bun"
-		
+
 	bun2
 		name = "High Bun"
 		icon_state = "hair_bun2"
@@ -549,6 +554,12 @@
 	dwarf
 		name = "Dwarf Beard"
 		icon_state = "facial_dwarf"
+
+	beak
+		name = "Aviskree Beak"
+		icon_state = "facial_beak"
+		gender = NEUTER
+		species_allowed = list("Aviskree")
 
 /*
 ///////////////////////////////////

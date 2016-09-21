@@ -17,7 +17,8 @@ var/global/list/citizenship_choices = list(
 	"Mars",
 	"Moghes",
 	"Ahdomai",
-	"Qerrbalak"
+	"Qerrbalak",
+	"Avis"
 	)
 
 var/global/list/home_system_choices = list(
@@ -25,7 +26,8 @@ var/global/list/home_system_choices = list(
 	"Nyx",
 	"Tau Ceti",
 	"Epsilon Ursae Minoris",
-	"S'randarr"
+	"S'randarr",
+	"Aindege"
 	)
 
 var/global/list/faction_choices = list(
@@ -48,6 +50,7 @@ var/global/list/religion_choices = list(
 	"Buddhist",
 	"Islamic",
 	"Christian",
+	"Avikan",
 	"Agnostic",
 	"Deist"
 	)

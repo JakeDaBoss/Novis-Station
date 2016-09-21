@@ -29,6 +29,7 @@
 #define LANGUAGE_SIIK_MAAS "Siik'maas"
 #define LANGUAGE_SIIK_TAJR "Siik'tajr"
 #define LANGUAGE_SKRELLIAN "Skrellian"
+#define LANGUAGE_AVISKREE "Aviachirp"
 #define LANGUAGE_RESOMI "Schechi"
 #define LANGUAGE_ROOTSPEAK "Rootspeak"
 #define LANGUAGE_TRADEBAND "Tradeband"
