@@ -2,7 +2,7 @@
 //This is a list of words which are ignored by the parser when comparing message contents for names. MUST BE IN LOWER CASE!
 var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","alien","as")
 
-/client/verb/adminhelp(msg as text)
+/client/verb/adminhelp()
 	set category = "Admin"
 	set name = "Request Assistance"
 
@@ -23,16 +23,16 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 		mesg = input("Please enter your message:", "Admin Help", null, null) as text
 
 
-	//clean the input msg
-	if(!msg)
+	//clean the input mesg
+	if(!mesg)
 		return
-	msg = sanitize(msg)
-	if(!msg)
+	mesg = sanitize(mesg)
+	if(!mesg)
 		return
-	var/original_msg = msg
+	var/original_mesg = mesg
 
-	//explode the input msg into a list
-	var/list/msglist = splittext(msg, " ")
+	//explode the input mesg into a list
+	var/list/mesglist = splittext(mesg, " ")
 
 	//generate keywords lookup
 	var/list/surnames = list()
@@ -61,9 +61,9 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			ckeys[M.ckey] = M
 
 	var/ai_found = 0
-	msg = ""
+	mesg = ""
 	var/list/mobs_found = list()
-	for(var/original_word in msglist)
+	for(var/original_word in mesglist)
 		var/word = ckey(original_word)
 		if(word)
 			if(!(word in adminhelp_ignored_words))
@@ -80,9 +80,9 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 							mobs_found += found
 							if(!ai_found && isAI(found))
 								ai_found = 1
-							msg += "<b><font color='black'>[original_word] (<A HREF='?_src_=holder;adminmoreinfo=\ref[found]'>?</A>)</font></b> "
+							mesg += "<b><font color='black'>[original_word] (<A HREF='?_src_=holder;adminmoreinfo=\ref[found]'>?</A>)</font></b> "
 							continue
-			msg += "[original_word] "
+			mesg += "[original_word] "
 
 	if(!mob) //this doesn't happen
 		return
@@ -94,8 +94,8 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			//Options bar:  mob, details ( admin = 2, dev = 3, mentor = 4, character name (0 = just ckey, 1 = ckey and character name), link? (0 no don't make it a link, 1 do so),
 			//		highlight special roles (0 = everyone has same looking name, 1 = antags / special roles get a golden name)
 
-	var/mentor_msg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 4, 1, 1, 0)][ai_cl]:</b> [msg]"
-	msg = "\blue <b><font color=red>Request for Help:: </font>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [msg]"
+	var/mentor_mesg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 4, 1, 1, 0)][ai_cl]:</b> [mesg]"
+	mesg = "\blue <b><font color=red>Request for Help:: </font>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [mesg]"
 
 	var/admin_number_afk = 0
 
@@ -130,34 +130,34 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 				for(var/client/X in mentorholders) // Mentors get a message without buttons and no character name
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_msg
+					X << mentor_mesg
 			if(adminholders.len)
 				for(var/client/X in adminholders) // Admins get the full monty
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << msg
+					X << mesg
 		if("Rule Issue")
 			if(modholders.len)
 				for(var/client/X in modholders) // Mods
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << msg
+					X << mesg
 			if(adminholders.len)
 				for(var/client/X in adminholders) // Admins get the full monty
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << msg
+					X << mesg
 		if("Other")
 			if(mentorholders.len)
 				for(var/client/X in mentorholders) // Admins of course get everything in their helps
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_msg
+					X << mentor_mesg
 			if(adminholders.len)
 				for(var/client/X in adminholders) // Admins get the full monty
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
-					X << msg
+					X << mesg
 
 
 /*	for(var/client/X in admins)
@@ -167,19 +167,19 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 				X << 'sound/effects/adminhelp.ogg'
 			if(X.holder.rights == R_MENTOR)
-				X << mentor_msg		// Mentors won't see coloring of names on people with special_roles (Antags, etc.)
+				X << mentor_mesg		// Mentors won't see coloring of names on people with special_roles (Antags, etc.)
 			else
-				X << msg*/
+				X << mesg*/
 
 	//show it to the person adminhelping too
-	src << "<font color='blue'>PM to-<b>Staff </b>: [original_msg]</font>"
+	src << "<font color='blue'>PM to-<b>Staff </b>: [original_mesg]</font>"
 
 	var/admin_number_present = admins.len - admin_number_afk
-	log_admin("HELP: [key_name(src)]: [original_msg] - heard by [admin_number_present] non-AFK admins.")
+	log_admin("HELP: [key_name(src)]: [original_mesg] - heard by [admin_number_present] non-AFK admins.")
 	if(admin_number_present <= 0)
-		send2adminirc("Request for Help from [key_name(src)]: [html_decode(original_msg)] - !![admin_number_afk ? "All admins AFK ([admin_number_afk])" : "No admins online"]!!")
+		send2adminirc("Request for Help from [key_name(src)]: [html_decode(original_mesg)] - !![admin_number_afk ? "All admins AFK ([admin_number_afk])" : "No admins online"]!!")
 	else
-		send2adminirc("Request for Help from [key_name(src)]: [html_decode(original_msg)]")
+		send2adminirc("Request for Help from [key_name(src)]: [html_decode(original_mesg)]")
 	feedback_add_details("admin_verb","AH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	return
 
