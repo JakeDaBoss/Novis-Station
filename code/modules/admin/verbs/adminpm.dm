@@ -1,4 +1,5 @@
 //allows right clicking mobs to send an admin PM to their client, forwards the selected mob's client to cmd_admin_pm
+var/isReply = 0
 /client/proc/cmd_admin_pm_context(mob/M as mob in mob_list)
 	set category = null
 	set name = "Admin PM Mob"
@@ -98,7 +99,10 @@
 	//play the recieving admin the adminhelp sound (if they have them enabled)
 	//non-admins shouldn't be able to disable this
 	if(C.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-		C << 'sound/effects/adminhelp.ogg'
+		if(isReply == 1)
+			C << 'sound/effects/adminhelp_new.ogg'
+		else
+			C << 'sound/effects/adminhelp-reply.ogg'
 
 	log_admin("PM: [key_name(src)]->[key_name(C)]: [msg]")
 	send2adminirc("Reply: [key_name(src)]->[key_name(C)]: [html_decode(msg)]")
@@ -108,8 +112,8 @@
 		//check client/X is an admin and isn't the sender or recipient
 		if(X == C || X == src)
 			continue
-		if(X.key != key && X.key != C.key && (X.holder.rights & R_ADMIN|R_MOD|R_MENTOR))
-			X << "<span class='pm'><span class='other'>" + create_text_tag("pm_other", "PM:", X) + " <span class='name'>[key_name(src, X, 0)]</span> to <span class='name'>[key_name(C, X, 0)]</span>: <span class='message'>[msg]</span></span></span>"
+		if(X.key!=key && X.key!=C.key && (X.holder.rights & R_ADMIN) || (X.holder.rights & (R_MOD|R_MENTOR|R_DEBUG)) )
+			X << "<B><font color='blue'>PM: [key_name(src, X, 0)]-&gt;[key_name(C, X, 0)] (<A HREF='?_src_=holder;takeadminhelp=\ref[C]'>TA</A>) (<A HREF='?_src_=holder;busy=\ref[C]'>BU</A>):</B> \blue [msg]</font>" //inform X
 
 /client/proc/cmd_admin_irc_pm(sender)
 	if(prefs.muted & MUTE_ADMINHELP)

@@ -1184,6 +1184,22 @@
 	else if(href_list["adminchecklaws"])
 		output_ai_laws()
 
+	else if(href_list["takeadminhelp"])
+		var/mob/M = locate(href_list["takeadminhelp"])
+		var/take_msg = "\blue <b><font color=red><a href='?src=\ref[usr];priv_msg=\ref[M]'>[key_name(M)]</a> is now being handled by <a href='?src=\ref[usr];priv_msg=\ref[src.owner]'>[key_name(src.owner)]</a></font></b>"
+		var/recieve_msg = "\blue <b>Your issue is being dealt with by <a href='?src=\ref[usr];priv_msg=\ref[src.owner]'>[usr.client.holder.fakekey ? "Administrator" : usr.key].</a></font> Click their name to send them more information about your issue.</b>"
+		M << recieve_msg
+		for(var/client/X in admins)
+			X << take_msg
+
+	else if(href_list["busy"])
+		var/mob/M = locate(href_list["busy"])
+		var/take_msg = "\blue <b><font color=green><a href='?src=\ref[usr];priv_msg=\ref[M]'>[key_name(M)]</a> has been told we are too busy to answer by <a href='?src=\ref[usr];priv_msg=\ref[src.owner]'>[key_name(src.owner)]</a></font></b>"
+		var/recieve_msg = "\red <b>Your request has been marked as no response necessary. Your request for help has been acknowledged, and will be investigated. Actions performed will not be communicated and may not be noticeable.</b>"
+		M << recieve_msg
+		for(var/client/X in admins)
+			X << take_msg
+
 	else if(href_list["adminmoreinfo"])
 		var/mob/M = locate(href_list["adminmoreinfo"])
 		if(!ismob(M))
