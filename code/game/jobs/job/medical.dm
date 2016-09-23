@@ -28,7 +28,7 @@
 	faction = "Station"
 	minimal_player_age = 3
 	total_positions = 5
-	spawn_positions = 3
+	spawn_positions = 5
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 7
@@ -75,7 +75,7 @@
 	alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
-/datum/job/geneticist
+/datum/job/medicalexam
 	title = "Medical Examiner"
 	department = "Medical"
 	department_flag = MED
