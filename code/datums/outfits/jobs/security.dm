@@ -49,3 +49,34 @@
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/security
 	pda_type = /obj/item/device/pda/security
+
+/decl/hierarchy/outfit/job/security/blueshield
+	name = OUTFIT_JOB_NAME("Blueshield Guard")
+	uniform = /obj/item/clothing/under/tactical
+	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/weapon/handcuffs
+	id_type = /obj/item/weapon/card/id/centcom
+	pda_type = /obj/item/device/pda/security
+
+/* NEEDS EDITING TO THE NEW FORMAT, THIS IS THE BLUESHIELD ITEMSSSSSS! //Omg go fuck yourself, this is here for documentation purposes!
+
+	equip(var/mob/living/carbon/human/H)
+		if(!H)	return 0
+		switch(H.backbag)
+			if(2) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/security(H), slot_back)
+			if(3) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel_sec(H), slot_back)
+			if(4) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel(H), slot_back)
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/blueshield(H), slot_l_ear)
+		H.equip_to_slot_or_del(new /obj/item/clothing/under/tactical(H), slot_w_uniform)
+		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
+		H.equip_to_slot_or_del(new /obj/item/device/pda/security(H), slot_belt)
+		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
+		H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud(H), slot_glasses)
+		if(H.backbag == 1)
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
+			H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_l_store)
+		else
+			H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
+		H.implant_loyalty(H)
+		return 1
+		*/
