@@ -297,6 +297,7 @@
 	name = "\improper NanoTrasen armored vest"
 	desc = "A synthetic armor vest. This one is marked with the crest of NanoTrasen."
 	icon_state = "ntvest"
+	armor = list(melee = 30, bullet = 15, laser = 40, energy = 10, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/vest/solgov
 	name = "\improper Sol Central Government armored vest"
