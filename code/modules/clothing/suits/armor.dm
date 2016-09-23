@@ -312,6 +312,7 @@
 	name = "contractor armored vest"
 	desc = "A synthetic armor vest. This one is marked with the crest of Proxima Centauri Risk Control, a private security firm."
 	icon_state = "pcrcvest"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/vest
 	name = "webbed armor vest"
