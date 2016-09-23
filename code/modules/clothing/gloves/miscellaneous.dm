@@ -56,6 +56,16 @@
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
 
+/obj/item/clothing/gloves/thick/swat
+	desc = "These tactical gloves are somewhat fire and impact-resistant."
+	name = "\improper SWAT Gloves"
+	item_state = "swat_gl"
+
+/obj/item/clothing/gloves/thick/black
+	desc = "These black gloves are usually worn by Security officers."
+	name = "\improper Black Gloves"
+	item_state = "black"
+
 /obj/item/clothing/gloves/thick/combat //Combined effect of SWAT gloves and insulated gloves
 	desc = "These tactical gloves are somewhat fire and impact resistant."
 	name = "combat gloves"
