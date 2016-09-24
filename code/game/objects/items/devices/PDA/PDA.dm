@@ -219,7 +219,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	default_cartridge = /obj/item/weapon/cartridge/chemistry
 	icon_state = "pda-chem"
 
-/obj/item/device/pda/geneticist
+/obj/item/device/pda/medexam
 	default_cartridge = /obj/item/weapon/cartridge/medical
 	icon_state = "pda-gene"
 

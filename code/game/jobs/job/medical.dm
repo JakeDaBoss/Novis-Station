@@ -88,7 +88,7 @@
 	economic_modifier = 7
 	access = list(access_medical, access_morgue, access_genetics)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_medical_examiner)
-	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	outfit_type = /decl/hierarchy/outfit/job/medical/medical_examiner
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"
