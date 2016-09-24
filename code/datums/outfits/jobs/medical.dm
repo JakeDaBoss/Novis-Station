@@ -69,13 +69,13 @@
 	pda_type = /obj/item/device/pda/chemist
 
 /decl/hierarchy/outfit/job/medical/geneticist
-	name = OUTFIT_JOB_NAME("Geneticist")
+	name = OUTFIT_JOB_NAME("Medical Examiner")
 	uniform = /obj/item/clothing/under/rank/geneticist
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/genetics
 	backpack = /obj/item/weapon/storage/backpack/genetics
 	r_pocket = /obj/item/device/flashlight/pen
 	satchel_one = /obj/item/weapon/storage/backpack/satchel_gen
-	id_type = /obj/item/weapon/card/id/medical/geneticist
+	id_type = /obj/item/weapon/card/id/medical/medicalexam
 	pda_type = /obj/item/device/pda/geneticist
 
 /decl/hierarchy/outfit/job/medical/psychiatrist

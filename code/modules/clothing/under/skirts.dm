@@ -118,7 +118,7 @@
 	worn_state = "cmof"
 
 /obj/item/clothing/under/rank/medical/geneticist/skirt
-	name = "geneticist's jumpskirt"
+	name = "Medical Examiner's jumpskirt"
 	icon_state = "geneticswhitef"
 	worn_state = "geneticswhitef"
 
