@@ -276,7 +276,7 @@
 					/obj/item/toy/figure/detective,\
 					/obj/item/toy/figure/dsquad,\
 					/obj/item/toy/figure/engineer,\
-					/obj/item/toy/figure/geneticist,\
+					/obj/item/toy/figure/medical_examiner,\
 					/obj/item/toy/figure/hop,\
 					/obj/item/toy/figure/hos,\
 					/obj/item/toy/figure/qm,\
