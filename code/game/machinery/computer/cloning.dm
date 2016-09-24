@@ -13,7 +13,7 @@
 	var/menu = 1 //Which menu screen to display
 	var/list/records = list()
 	var/datum/dna2/record/active_record = null
-	var/obj/item/weapon/disk/data/diskette = null //Mostly so the geneticist can steal everything.
+	var/obj/item/weapon/disk/data/diskette = null //Mostly so the medical examiner can steal everything.
 	var/loading = 0 // Nice loading text
 
 /obj/machinery/computer/cloning/initialize()
