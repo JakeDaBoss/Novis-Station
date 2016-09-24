@@ -5,6 +5,7 @@ DIR: code code\__defines code\controllers\Processes code\datums code\datums\exte
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1347
-WINDOW: code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\devices\radio\headset.dm
+WINDOW: code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\devices\radio\headset.dm;code\game\machinery\PDApainter.dm
+FILE: code\game\machinery\PDApainter.dm
 */
 // END_INTERNALS
