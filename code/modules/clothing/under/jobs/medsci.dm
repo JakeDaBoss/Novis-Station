@@ -174,9 +174,9 @@
 /*
  * Medsci, unused (i think) stuff
  */
-/obj/item/clothing/under/rank/geneticist_new
+/obj/item/clothing/under/rank/medical_examiner
 	desc = "It's made of a special fiber which provides minor protection against biohazards."
-	name = "geneticist's jumpsuit"
+	name = "Medical Examiner's jumpsuit"
 	icon_state = "genetics_new"
 	item_state = "w_suit"
 	worn_state = "genetics_new"
