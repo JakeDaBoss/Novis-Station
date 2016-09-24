@@ -1,11 +1,10 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1474638332
-DIR: code code\__defines code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\game code\game\jobs code\game\jobs\job code\game\machinery code\game\machinery\doors code\game\objects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\radio code\game\objects\structures code\game\objects\structures\crates_lockers code\game\objects\structures\crates_lockers\closets code\game\objects\structures\crates_lockers\closets\secure code\modules code\modules\clothing code\modules\clothing\gloves code\modules\clothing\suits icons icons\mob icons\mob\species icons\mob\species\resomi icons\mob\species\vox icons\obj icons\obj\clothing icons\obj\clothing\species icons\obj\clothing\species\resomi icons\obj\clothing\species\skrell icons\obj\clothing\species\tajaran icons\obj\clothing\species\unathi maps maps\exodus 
+LAST_COMPILE_TIME: 1474662515
+DIR: code code\__defines code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\game code\game\area code\game\jobs code\game\jobs\job code\game\machinery code\game\objects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\radio code\game\objects\structures code\game\objects\structures\crates_lockers code\game\objects\structures\crates_lockers\closets code\game\objects\structures\crates_lockers\closets\secure 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1347
-WINDOW: code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\devices\radio\headset.dm;maps\exodus\exodus-0.dmm;maps\exodus\exodus-1.dmm;maps\exodus\exodus-2.dmm;code\game\jobs\access_datum.dm;code\modules\clothing\suits\armor.dm;code\modules\clothing\gloves\miscellaneous.dm;icons\obj\clothing\gloves.dmi
-FILE: code\modules\clothing\gloves\miscellaneous.dm
+WINDOW: code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\devices\radio\headset.dm
 */
 // END_INTERNALS
