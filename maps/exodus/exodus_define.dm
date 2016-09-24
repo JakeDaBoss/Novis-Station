@@ -1,7 +1,7 @@
 
 /datum/map/exodus
-	name = "Exodus"
-	full_name = "NSS Exodus"
+	name = "Novis"
+	full_name = "NSS Novis"
 	path = "exodus"
 
 	station_levels = list(0,1,2)
