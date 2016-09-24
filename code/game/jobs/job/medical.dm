@@ -28,7 +28,7 @@
 	faction = "Station"
 	minimal_player_age = 3
 	total_positions = 5
-	spawn_positions = 3
+	spawn_positions = 5
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 7
@@ -37,9 +37,26 @@
 	alt_titles = list(
 		"Surgeon" = /decl/hierarchy/outfit/job/medical/doctor/surgeon,
 		"Emergency Physician" = /decl/hierarchy/outfit/job/medical/doctor/emergency_physician,
-		"Nurse" = /decl/hierarchy/outfit/job/medical/doctor/nurse,
-		"Virologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
+		"Nurse" = /decl/hierarchy/outfit/job/medical/doctor/nurse)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
+
+/datum/job/virologist
+	title = "Virologist"
+	department = "Medical"
+	department_flag = MED
+	faction = "Station"
+	minimal_player_age = 5
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief medical officer"
+	selection_color = "#013d3b"
+	economic_modifier = 7
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology)
+	alt_titles = list(
+		"Immunologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist,
+		"Pathologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
+	outfit_type = /decl/hierarchy/outfit/job/medical/doctor/virologist
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist
@@ -58,19 +75,19 @@
 	alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
-/datum/job/geneticist
-	title = "Geneticist"
+/datum/job/medicalexam
+	title = "Medical Examiner"
 	department = "Medical"
 	department_flag = MED
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0
-	minimal_player_age = 7
-	supervisors = "the chief medical officer and research director"
+	minimal_player_age = 1
+	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 7
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
+	access = list(access_medical, access_morgue, access_genetics)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_medical_examiner)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 /datum/job/psychiatrist

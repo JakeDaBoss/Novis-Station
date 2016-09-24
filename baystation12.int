@@ -1,11 +1,10 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1474490152
-DIR: code code\__defines code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\game code\game\jobs code\game\jobs\job code\game\machinery code\game\machinery\doors code\modules code\modules\admin code\modules\admin\verbs code\modules\admin\view_variables code\modules\mob code\modules\mob\living code\modules\mob\living\silicon code\modules\mob\living\silicon\pai code\modules\nano code\modules\nano\interaction code\modules\tgui code\modules\tgui\states code\modules\virus2 maps maps\exodus sound sound\effects 
+LAST_COMPILE_TIME: 1474662515
+DIR: code code\__defines code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\game code\game\area code\game\jobs code\game\jobs\job code\game\machinery code\game\objects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\radio code\game\objects\structures code\game\objects\structures\crates_lockers code\game\objects\structures\crates_lockers\closets code\game\objects\structures\crates_lockers\closets\secure 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1347
-WINDOW: maps\exodus\exodus-0.dmm;code\modules\admin\verbs\adminpm.dm;code\modules\admin\topic.dm;code\modules\admin\verbs\adminhelp.dm;code\modules\admin\admin.dm;maps\exodus\exodus-2.dmm;maps\exodus\exodus-1.dmm
-FILE: maps\exodus\exodus-1.dmm
+WINDOW: code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\devices\radio\headset.dm
 */
 // END_INTERNALS
