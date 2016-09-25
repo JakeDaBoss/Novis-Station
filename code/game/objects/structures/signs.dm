@@ -280,6 +280,11 @@
 	desc = "A direction sign, pointing out which way the Medical Bay is."
 	icon_state = "direction_med"
 
+/obj/structure/sign/directions/med_er
+	name = "\improper Emergency Room"
+	desc = "A direction sign, pointing out which way the Emergency Room is."
+	icon_state = "med_er"
+
 /obj/structure/sign/directions/evac
 	name = "\improper Evacuation Wing"
 	desc = "A direction sign, pointing out which way the Evacuation Wing is."
