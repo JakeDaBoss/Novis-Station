@@ -95,12 +95,12 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			//		highlight special roles (0 = everyone has same looking name, 1 = antags / special roles get a golden name)
 
 	var/mentor_mesg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 4, 1, 1, 0)][ai_cl]:</b> [mesg]"
-	mesg = "\blue <b><font color=red>Request for Help:: </font>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [mesg]"
+	mesg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [mesg]"
 
 	var/admin_number_afk = 0
 
 	var/list/mentorholders = list()
-/*	var/list/debugholders = list()*/
+	var/list/devholders = list()
 	var/list/modholders = list()
 	var/list/adminholders = list()
 	for(var/client/X in admins)
@@ -108,12 +108,12 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			mentorholders += X
 			if(X.is_afk())
 				admin_number_afk++
-/*		if(R_DEV & X.holder.rights || R_DEBUG & X.holder.rights) // Looking for anyone with +Debug which will be admins, developers, and developer mentors
-			debugholders += X
+		if(R_VAREDIT & X.holder.rights || R_DEBUG & X.holder.rights) // Looking for anyone with +Debug which will be admins, developers, and developer mentors
+			devholders += X
 			if(!(R_ADMIN & X.holder.rights))
 				if(X.is_afk())
 					admin_number_afk++
-*/
+
 		if(R_MOD & X.holder.rights || R_BAN & X.holder.rights) // Looking for anyone with +Debug which will be admins, developers, and developer mentors
 			modholders += X
 			if(!(R_ADMIN & X.holder.rights))
@@ -131,33 +131,54 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mentor_mesg
+			if(modholders.len)
+				for(var/client/X in modholders)
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mesg
 			if(adminholders.len)
-				for(var/client/X in adminholders) // Admins get the full monty
+				for(var/client/X in adminholders)
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mesg
 		if("Rule Issue")
 			if(modholders.len)
-				for(var/client/X in modholders) // Mods
+				for(var/client/X in modholders)
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mesg
 			if(adminholders.len)
-				for(var/client/X in adminholders) // Admins get the full monty
+				for(var/client/X in adminholders)
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mesg
-		if("Other")
-			if(mentorholders.len)
-				for(var/client/X in mentorholders) // Admins of course get everything in their helps
+		if("Technical Issue")
+			if(devholders.len)
+				for(var/client/X in mentorholders)
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mentor_mesg
-			if(adminholders.len)
-				for(var/client/X in adminholders) // Admins get the full monty
+		if("Other")
+			if(mentorholders.len)
+				for(var/client/X in mentorholders)
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mentor_mesg
+			if(modholders.len)
+				for(var/client/X in modholders)
 					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
 						X << 'sound/effects/adminhelp_new.ogg'
 					X << mesg
+			if(adminholders.len)
+				for(var/client/X in adminholders)
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mesg
+			if(devholders.len)
+				for(var/client/X in mentorholders) // Devs also get "Other" requests.
+					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+						X << 'sound/effects/adminhelp_new.ogg'
+					X << mentor_mesg
 
 
 /*	for(var/client/X in admins)
