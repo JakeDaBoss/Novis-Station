@@ -2158,6 +2158,7 @@
 #include "maps\exodus\exodus.dm"
 #include "maps\exodus\exodus_areas.dm"
 #include "maps\exodus\exodus_define.dm"
+#include "maps\exodus\exodus_elevator.dm"
 #include "maps\exodus\exodus_holodecks.dm"
 #include "maps\exodus\exodus_jobs.dm"
 #include "maps\exodus\exodus_shuttles.dm"
