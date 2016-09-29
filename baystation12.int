@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1475166350
-DIR: code code\__defines code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\datums\supplypacks code\game code\game\area code\game\jobs code\game\jobs\job code\game\objects code\game\objects\structures icons icons\obj maps maps\exodus maps\torch 
+LAST_COMPILE_TIME: 1475187727
+DIR: code code\__defines code\_helpers code\controllers code\controllers\Processes code\datums code\datums\extensions code\datums\extensions\multitool code\datums\outfits code\datums\outfits\jobs code\datums\supplypacks code\game code\game\area code\game\jobs code\game\jobs\job code\game\objects code\game\objects\structures code\modules code\modules\mob code\modules\modular_computers code\modules\modular_computers\file_system code\modules\modular_computers\file_system\programs code\modules\multiz code\modules\paperwork code\modules\turbolift icons icons\obj maps maps\exodus maps\torch 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1347
-WINDOW: icons\obj\decals.dmi;code\game\objects\structures\signs.dm;maps\exodus\exodus-0.dmm;maps\exodus\exodus-1.dmm;maps\exodus\exodus-2.dmm;maps\torch\torch_elevator.dm;maps\exodus\exodus_elevator.dm;maps\exodus\exodus_areas.dm
-FILE: maps\exodus\exodus-2.dmm
+WINDOW: icons\obj\decals.dmi;code\game\objects\structures\signs.dm;maps\exodus\exodus-0.dmm;maps\exodus\exodus-1.dmm;maps\exodus\exodus-2.dmm;maps\exodus\exodus-workbook.dmm;maps\torch\torch_elevator.dm;maps\exodus\exodus_elevator.dm;maps\exodus\exodus_areas.dm;maps\exodus\exodus_define.dm;code\modules\mob\mob.dm;code\modules\multiz\turf.dm;code\modules\turbolift\turbolift_map.dm;code\modules\turbolift\turbolift_areas.dm;code\modules\modular_computers\file_system\programs\file_browser.dm
+FILE: maps\exodus\exodus-0.dmm
 */
 // END_INTERNALS
