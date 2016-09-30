@@ -33,9 +33,9 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - rscadd: "Ported over Blueshield Guard."
-  - rscdel: "Removed Geneticist Position. It is instead replaced by Medical Examiner, whom is now in charge of the Morgue."
-  - wip: "Continuation of the z-level Project. Added upper command deck, and multi-z medical bay."
-  - bugfix: "Fixed an early-alpha bug in the adminhelps system."
-  - spellcheck: "Fixed an annoying as fuck bug with the adminhelps."
   - experiment: "Release of the Bridge and Medical multi-z levels. Report bugs to Oliver."
+  - bugfix: "Fixed sub-level maintenance not having an APC."
+  - bugfix: "Fixed improper area's in both sub- and main levels."
+  - bugfix: "Wiring issues fixed (hopefully)."
+  - bugfix: "Fixed improper wiring in Morgue having the wrong knots."
+  - bugfix: "Fixed three area's not having air alarms."
