@@ -80,8 +80,8 @@
 	department = "Medical"
 	department_flag = MED
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 1
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
