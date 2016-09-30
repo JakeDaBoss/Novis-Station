@@ -36,3 +36,5 @@ changes:
   - rscadd: "Ported over Blueshield Guard."
   - rscdel: "Removed Geneticist Position. It is instead replaced by Medical Examiner, whom is now in charge of the Morgue."
   - wip: "Continuation of the z-level Project. Added upper command deck, and multi-z medical bay."
+  - bugfix: "Fixed an early-alpha bug in the adminhelps system."
+  - spellcheck: "Fixed an annoying as fuck bug with the adminhelps."

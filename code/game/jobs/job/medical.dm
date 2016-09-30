@@ -12,10 +12,10 @@
 	economic_modifier = 10
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_external_airlocks)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_external_airlocks, access_medical_examiner)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_external_airlocks)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_external_airlocks, access_medical_examiner)
 
 	minimal_player_age = 14
 	ideal_character_age = 50
@@ -66,7 +66,7 @@
 	faction = "Station"
 	minimal_player_age = 7
 	total_positions = 2
-	spawn_positions = 2
+	spawn_positions = 3
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 5
@@ -88,7 +88,7 @@
 	economic_modifier = 7
 	access = list(access_medical, access_morgue, access_genetics)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_medical_examiner)
-	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	outfit_type = /decl/hierarchy/outfit/job/medical/medical_examiner
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"
@@ -121,3 +121,19 @@
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
 	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+
+/datum/job/medreceptionist
+	title = "Medical Receptionist"
+	department = "Medical"
+	department_flag = MED
+	faction = "Station"
+	total_positions = 3
+	spawn_positions = 4
+	supervisors = "the chief medical officer"
+	selection_color = "#013d3b"
+	economic_modifier = 4
+	access = list(access_medical)
+	minimal_access = list(access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/medical/medreceptionist
+
+

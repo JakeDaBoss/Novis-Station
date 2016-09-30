@@ -24,7 +24,7 @@
 	slot_flags = SLOT_BACK
 	max_w_class = 4
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
-	
+
 /obj/item/weapon/storage/backpack/equipped()
 	if(!has_extension(src, /datum/extension/appearance))
 		set_extension(src, /datum/extension/appearance, /datum/extension/appearance/cardborg)
@@ -124,8 +124,8 @@
 	desc = "It's a green backpack with many pockets to store plants and tools in."
 	icon_state = "hydpack"
 
-/obj/item/weapon/storage/backpack/genetics
-	name = "geneticist backpack"
+/obj/item/weapon/storage/backpack/medexam
+	name = "Medical Examiner backpack"
 	desc = "It's a backpack fitted with slots for diskettes and other workplace tools."
 	icon_state = "genpack"
 
