@@ -77,6 +77,7 @@
 	title = "Blueshield Guard"
 	department = "Security"
 	department_flag = SEC
+	req_admin_notify = 1
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -97,3 +98,8 @@
 			            access_gateway)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/blueshield
+
+/datum/job/blueshield/equip(var/mob/living/carbon/human/H)
+	. = ..()
+	if(.)
+		H.implant_loyalty(H)
