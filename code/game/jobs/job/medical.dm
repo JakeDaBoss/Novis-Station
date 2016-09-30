@@ -121,3 +121,19 @@
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
 	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+
+/datum/job/medreceptionist
+	title = "Medical Receptionist"
+	department = "Medical"
+	department_flag = MED
+	faction = "Station"
+	total_positions = 3
+	spawn_positions = 4
+	supervisors = "the chief medical officer"
+	selection_color = "#013d3b"
+	economic_modifier = 4
+	access = list(access_medical)
+	minimal_access = list(access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/medical/medreceptionist
+
+
