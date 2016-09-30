@@ -283,7 +283,7 @@
 
 /obj/item/weapon/storage/box/monkeycubes/atoccubes
 	name = "atoc cube box"
-	desc = "Drymate brand neaera cubes, shipped from Avis. Just add water!"
+	desc = "Drymate brand atoc cubes, shipped from Avis. Just add water!"
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/monkeycube/wrapped/atoccube = 5)
 
 /obj/item/weapon/storage/box/ids
