@@ -135,6 +135,22 @@
 /datum/language/resomi/get_random_name(gender)
 	return ..(gender, 1, 4, 1.5)
 
+/datum/language/Aviskree
+	name = "Aviachirp"
+	desc = "An expressive language is very beautiful execpt when you want to sleep."
+	speech_verb = "chirps"
+	ask_verb = "chirrups"
+	exclaim_verb = "trills"
+	colour = "aviskree"
+	key = "y"
+	flags = WHITELISTED
+	space_chance = 50
+	syllables = list(
+			"he", "yo", "te", "ni", "ka", "zi", "ma", "ta", "fa", "an", "el",
+			"ya", "ha", "zi", "di", "ti", "ku", "de", "le", "lo", "sh", "lo",
+			"ae", "ga", "gi", "go", "ki", "hi", "fo", "fi", "li", "mi", "ma"
+		)
+
 //Syllable Lists
 /*
 	This list really long, mainly because I can't make up my mind about which mandarin syllables should be removed,

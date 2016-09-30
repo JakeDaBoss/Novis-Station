@@ -122,3 +122,9 @@
 	sort_category = "Xenowear"
 	whitelisted = "Machine"
 	cost = 1
+
+/datum/gear/shoes/cloth
+	display_name = "cloth wraps"
+	path = /obj/item/clothing/shoes/clothboots
+	sort_category = "Xenowear"
+	cost = 1

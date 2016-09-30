@@ -83,6 +83,10 @@
 	path = /obj/item/clothing/accessory/storage/webbing
 	cost = 2
 
+/datum/gear/accessory/aviskreemedallion
+	display_name = "aviskree medallion"
+	path = /obj/item/clothing/accessory/aviskree
+
 /datum/gear/accessory/hawaii
 	display_name = "hawaii shirt"
 	path = /obj/item/clothing/accessory/hawaii
