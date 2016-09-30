@@ -146,7 +146,7 @@
 
 /obj/item/clothing/shoes/clothboots
 	name = "cloth wraps"
-	desc = "Specially treate clothen wraps used as foot covering digitigrade feet."
+	desc = "Specially treated clothen wraps used as foot covering digitigrade feet."
 	icon_state = "digit-cloth"
 	item_state = "digit-cloth"
 	w_class = 2

@@ -202,7 +202,7 @@
 	desc = "A box containing 5 highly experimental supermatter grenades."
 	icon_state = "radbox"
 	startswith = list(/obj/item/weapon/grenade/supermatter = 5)
-    
+
 /obj/item/weapon/storage/box/trackimp
 	name = "boxed tracking implant kit"
 	desc = "Box full of scum-bag tracking utensils."
@@ -280,6 +280,11 @@
 	name = "neaera cube box"
 	desc = "Drymate brand neaera cubes, shipped from Jargon 4. Just add water!"
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube = 5)
+
+/obj/item/weapon/storage/box/monkeycubes/atoccubes
+	name = "atoc cube box"
+	desc = "Drymate brand neaera cubes, shipped from Avis. Just add water!"
+	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/monkeycube/wrapped/atoccube = 5)
 
 /obj/item/weapon/storage/box/ids
 	name = "box of spare IDs"

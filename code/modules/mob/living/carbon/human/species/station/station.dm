@@ -304,6 +304,7 @@
 	deform = 'icons/mob/human_races/r_def_Aviskree.dmi'
 	language = "Aviachirp"
 	tail = "aviskreetail"
+	primitive_form = "Atoc"
 	blurb = "A tall avian species, Aviskree originally hail from Avis, of the Aindege system, \
  	a heavily forested planet of avian species, <br/> <br/> The Aviskree live in a tradition \
  	heavy society with a tech level resembling that of early 2000s earth with advances in electricity. \

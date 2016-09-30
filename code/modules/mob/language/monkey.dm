@@ -20,3 +20,8 @@
 	name = "Farwa"
 	desc = "Meow meow meow."
 	key = "9"
+
+/datum/language/aviskree/monkey
+	name = "Atoc"
+	desc = "Chirp chirp chirp"
+	key = "0"
