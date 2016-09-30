@@ -102,3 +102,10 @@
 /decl/hierarchy/outfit/job/medical/paramedic/emt
 	name = OUTFIT_JOB_NAME("Emergency medical technician")
 	uniform = /obj/item/clothing/under/rank/medical/paramedic
+
+/decl/hierarchy/outfit/job/medical/medreceptionist
+	name = OUTFIT_JOB_NAME("Medical Receptionist")
+	uniform = /obj/item/clothing/under/suit_jacket
+	shoes = /obj/item/clothing/shoes/dress
+	id_type = /obj/item/weapon/card/id/civilian
+	flags = OUTFIT_EXTENDED_SURVIVAL
