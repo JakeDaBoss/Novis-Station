@@ -1655,6 +1655,14 @@
 	name = "neaera cube"
 	monkey_type = "Neaera"
 
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/atoccube
+	name = "atoc cube"
+	monkey_type = "Atoc"
+
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/wrapped/atoccube
+	name = "atoc cube"
+	monkey_type = "Atoc"
+
 
 /obj/item/weapon/reagent_containers/food/snacks/spellburger
 	name = "Spell Burger"

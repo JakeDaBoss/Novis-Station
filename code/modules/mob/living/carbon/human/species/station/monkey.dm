@@ -107,3 +107,19 @@
 	flesh_color = "#34AF10"
 	base_color = "#066000"
 	reagent_tag = IS_UNATHI
+
+
+/datum/species/monkey/aviskree
+	name = "Atoc"
+	name_plural = "Atoc"
+	health_hud_intensity = 1.75
+
+	icobase = 'icons/mob/human_races/monkeys/r_atoc.dmi'
+	deform = 'icons/mob/human_races/monkeys/r_atoc.dmi'
+
+	tail = "atoctail"
+	greater_form = "Aviskree"
+	default_language = "Atoc"
+	flesh_color = "#dcbd2a"
+	base_color = "#d2b428"
+	reagent_tag = IS_AVISKREE
