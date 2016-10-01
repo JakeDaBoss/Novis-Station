@@ -36,3 +36,4 @@ changes:
   - rscadd: "Permitted Atmos Techs to spawn."
   - tweak: "Removed the necessity of account age for jobs. This will be re-enabled by October 30th."
   - bugfix: "Properly fixed Medical Examiners. No traces left of the olden' days Geneticist."
+  - bugfix: "Fix unintentional holofloors in Blueshield armory."
