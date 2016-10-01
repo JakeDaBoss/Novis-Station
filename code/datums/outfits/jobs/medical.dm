@@ -70,8 +70,8 @@
 
 /decl/hierarchy/outfit/job/medical/medical_examiner
 	name = OUTFIT_JOB_NAME("Medical Examiner")
-	uniform = /obj/item/clothing/under/rank/geneticist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/genetics
+	uniform = /obj/item/clothing/under/rank/medexam
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/medexam
 	backpack = /obj/item/weapon/storage/backpack/medexam
 	r_pocket = /obj/item/device/flashlight/pen
 	satchel_one = /obj/item/weapon/storage/backpack/satchel_gen
