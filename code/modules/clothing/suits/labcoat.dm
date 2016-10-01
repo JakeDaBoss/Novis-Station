@@ -73,7 +73,7 @@
 	icon_open = "labgreen_open"
 	icon_closed = "labgreen"
 
-/obj/item/clothing/suit/storage/toggle/labcoat/genetics
+/obj/item/clothing/suit/storage/toggle/labcoat/medexam
 	name = "Medical Examiner labcoat"
 	desc = "A suit that protects against minor chemical spills. Has a blue stripe on the shoulder."
 	icon_state = "labcoat_gen_open"
