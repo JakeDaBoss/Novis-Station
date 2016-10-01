@@ -33,8 +33,4 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - rscadd: "Added Aviskree."
-  - rscadd: "Added Aviskree Medallion."
-  - rscadd: "Added Cloth Footwraps."
-  - rscadd: "Added Aviachirp syllables."
-  - rscadd: "Added Aviskree being unable to taste capsaicin and it's condensed counterpart, spray effect still works fine."
+  - bugfix: "Fixed people being able to choose most languages."
