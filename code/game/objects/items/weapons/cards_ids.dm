@@ -300,8 +300,8 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/weapon/card/id/medical/chemist
 	job_access_type = /datum/job/chemist
 
-/obj/item/weapon/card/id/medical/geneticist
-	job_access_type = /datum/job/geneticist
+/obj/item/weapon/card/id/medical/medicalexam
+	job_access_type = /datum/job/medicalexam
 
 /obj/item/weapon/card/id/medical/psychiatrist
 	job_access_type = /datum/job/psychiatrist

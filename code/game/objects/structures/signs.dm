@@ -280,6 +280,56 @@
 	desc = "A direction sign, pointing out which way the Medical Bay is."
 	icon_state = "direction_med"
 
+/obj/structure/sign/directions/med_er_red
+	name = "\improper Emergency Room"
+	desc = "A direction sign, pointing out which way the Emergency Room is, in urgent red letters."
+	icon_state = "direction_er_red"
+
+/obj/structure/sign/directions/med_er_blue
+	name = "\improper Emergency Room"
+	desc = "A direction sign, pointing out which way the Emergency Room is, in styled blue letters."
+	icon_state = "direction_er_blue"
+
+/obj/structure/sign/directions/med_clo
+	name = "\improper Cloning Facilities"
+	desc = "A direction sign, pointing out which way the Cloning Facilities are."
+	icon_state = "direction_cloning"
+
+/obj/structure/sign/directions/med_cryo
+	name = "\improper Cryotreatment Facilities"
+	desc = "A direction sign, pointing out which way the Cryotreatment Facilities are."
+	icon_state = "direction_cryo"
+
+/obj/structure/sign/directions/med_exam
+	name = "\improper Exam Room"
+	desc = "A direction sign, pointing out which way the Examination Room is."
+	icon_state = "direction_exam"
+
+/obj/structure/sign/directions/med_genprac
+	name = "\improper General Practitioner"
+	desc = "A direction sign, pointing out which way the General Practitioner offices are."
+	icon_state = "direction_genprac"
+
+/obj/structure/sign/directions/med_morgue
+	name = "\improper Morgue"
+	desc = "A direction sign, pointing out which way the Morgue is."
+	icon_state = "direction_morgue"
+
+/obj/structure/sign/directions/med_surgery
+	name = "\improper Surgical Facilities"
+	desc = "A direction sign, pointing out which way the Surgical Facilities are."
+	icon_state = "direction_surgery"
+
+/obj/structure/sign/directions/med_viro_g
+	name = "\improper Virology"
+	desc = "A direction sign, pointing out which way the Virology facilities are, in stylish green letters."
+	icon_state = "direction_viro_green"
+
+/obj/structure/sign/directions/med_viro_w
+	name = "\improper Virology"
+	desc = "A direction sign, pointing out which way the Virology facilities are."
+	icon_state = "direction_viro_white"
+
 /obj/structure/sign/directions/evac
 	name = "\improper Evacuation Wing"
 	desc = "A direction sign, pointing out which way the Evacuation Wing is."

@@ -72,3 +72,34 @@
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/officer
+
+/datum/job/blueshield
+	title = "Blueshield Guard"
+	department = "Security"
+	department_flag = SEC
+	req_admin_notify = 1
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the heads of all departments"
+	selection_color = "#601c1c"
+	economic_modifier = 4
+	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_mailsorting, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_mining_station,
+			            access_gateway)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_mining_station,
+			            access_gateway)
+	minimal_player_age = 7
+	outfit_type = /decl/hierarchy/outfit/job/security/blueshield
+
+/datum/job/blueshield/equip(var/mob/living/carbon/human/H)
+	. = ..()
+	if(.)
+		H.implant_loyalty(H)

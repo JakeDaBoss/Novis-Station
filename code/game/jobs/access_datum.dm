@@ -384,6 +384,24 @@
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
 
+/var/const/access_medical_examiner = 67
+/datum/access/medical_examiner
+	id = access_medical_examiner
+	desc = "Medical Examiner"
+	region = ACCESS_REGION_MEDBAY
+
+/var/const/access_blueshield = 68
+/datum/access/blueshield
+	id = access_blueshield
+	desc = "Blueshield's Office"
+	region = ACCESS_REGION_COMMAND
+
+/var/const/access_blueshield_armory = 69
+/datum/access/blueshield_armory
+	id = access_blueshield_armory
+	desc = "Blueshield's Armory"
+	region = ACCESS_REGION_COMMAND
+
 /******************
 * Central Command *
 ******************/
