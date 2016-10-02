@@ -209,6 +209,7 @@ var/list/admin_verbs_paranoid_debug = list(
 
 var/list/admin_verbs_possess = list(
 	/proc/possess,
+	/client/proc/admincryo,
 	/proc/release
 	)
 var/list/admin_verbs_permissions = list(
