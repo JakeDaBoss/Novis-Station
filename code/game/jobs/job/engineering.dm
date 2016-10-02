@@ -47,8 +47,8 @@
 	department = "Engineering"
 	department_flag = ENG
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the chief engineer"
 	selection_color = "#5b4d20"
 	economic_modifier = 5

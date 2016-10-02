@@ -188,7 +188,7 @@
 	name = "Medical uniforms"
 	contains = list(/obj/item/clothing/shoes/white = 3,
 					/obj/item/clothing/under/rank/chief_medical_officer,
-					/obj/item/clothing/under/rank/geneticist,
+					/obj/item/clothing/under/rank/medexam,
 					/obj/item/clothing/under/rank/virologist,
 					/obj/item/clothing/under/rank/nursesuit,
 					/obj/item/clothing/under/rank/nurse,
@@ -198,7 +198,7 @@
 					/obj/item/clothing/suit/storage/toggle/labcoat = 3,
 					/obj/item/clothing/suit/storage/toggle/labcoat/cmo,
 					/obj/item/clothing/suit/storage/toggle/labcoat/cmoalt,
-					/obj/item/clothing/suit/storage/toggle/labcoat/genetics,
+					/obj/item/clothing/suit/storage/toggle/labcoat/medexam,
 					/obj/item/clothing/suit/storage/toggle/labcoat/virologist,
 					/obj/item/clothing/suit/storage/toggle/labcoat/chemist,
 					/obj/item/weapon/storage/box/masks,
