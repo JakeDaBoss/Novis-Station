@@ -3447,7 +3447,7 @@
 "boo" = (/obj/structure/bed/chair/comfy/purp,/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
 "bop" = (/obj/structure/table/glass,/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
 "boq" = (/obj/structure/bed/chair/comfy/red,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
-"bor" = (/obj/structure/bed/chair/comfy/blue,/obj/machinery/button/remote/blast_door{name = "Shutters"; pixel_y = -32},/obj/machinery/button/flasher{id = "briefing"; name = "SIT THE FUCK DOWN!!!"; pixel_x = 6; pixel_y = -32},/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
+"bor" = (/obj/structure/bed/chair/comfy/blue,/obj/machinery/button/remote/blast_door{id = "crewbriefing"; name = "Shutters"; pixel_y = -32},/obj/machinery/button/flasher{id = "briefing"; name = "SIT THE FUCK DOWN!!!"; pixel_x = 6; pixel_y = -32},/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
 "bos" = (/obj/structure/bed/chair/comfy/black,/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
 "bot" = (/obj/structure/bed/chair/comfy/beige,/turf/simulated/floor/tiled,/area/crew_quarters{name = "\improper Crew Briefing"})
 "bou" = (/obj/structure/extinguisher_cabinet{pixel_x = -27; pixel_y = 1},/obj/structure/disposalpipe/segment,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/hallway/primary/central_two)
