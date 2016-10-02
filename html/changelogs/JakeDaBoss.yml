@@ -40,3 +40,4 @@ changes:
   - bugfix: "Fixed an unwired APC in the morgue."
   - bugfix: "Fixed stairs in morgue not going up."
   - imageadd: "Added an overlay for future use in effects. This will likely be used for Paralyze Mob."
+  - experiment: "Added an experimental fix to the radio issue."
