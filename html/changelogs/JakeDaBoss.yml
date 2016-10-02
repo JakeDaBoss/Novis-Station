@@ -38,4 +38,5 @@ changes:
   - rscadd: "Re-added force shuttle for mods, if it ever bugs out they can force it to leave."
   - tweak: "Made the Paralyze Mob verb available to mods and mentors."
   - bugfix: "Fixed an unwired APC in the morgue."
+  - bugfix: "Fixed stairs in morgue not going up."
   - imageadd: "Added an overlay for future use in effects. This will likely be used for Paralyze Mob."
