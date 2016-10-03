@@ -6,7 +6,7 @@
 
 	station_levels = list(1,2,3)
 	admin_levels = list(4)
-	contact_levels = list(1,2,3,4,6)
+	contact_levels = list(1,2,3,5,6,7,8)
 	player_levels = list(1,2,3,5,6,7,8)
 
 	shuttle_docked_message = "The scheduled Crew Transfer Shuttle to %Dock_name% has docked with the station. It will depart in approximately %ETD%"

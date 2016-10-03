@@ -12,7 +12,7 @@
 		if("Chaplain")
 			return list(access_morgue, access_chapel_office, access_crematorium)
 		if("Detective")
-			return list(access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_court)
+			return list(access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
 		if("Medical Doctor")
 			return list(access_medical, access_morgue, access_surgery)
 		if("Gardener")	// -- TLE
@@ -20,28 +20,28 @@
 		if("Librarian") // -- TLE
 			return list(access_library)
 		if("Lawyer") //Muskets 160910
-			return list(access_lawyer, access_court, access_sec_doors)
+			return list(access_lawyer, access_sec_doors)
 		if("Captain")
 			return get_all_accesses()
 		if("Crew Supervisor")
-			return list(access_security, access_sec_doors, access_brig, access_court)
+			return list(access_security, access_sec_doors, access_brig)
 		if("Correctional Advisor")
-			return list(access_security, access_sec_doors, access_brig, access_armory, access_court)
+			return list(access_security, access_sec_doors, access_brig, access_armory)
 		if("Scientist")
 			return list(access_tox, access_tox_storage, access_research, access_xenobiology)
 		if("Safety Administrator")
-			return list(access_medical, access_morgue, access_tox, access_tox_storage, access_chemistry, access_genetics, access_court,
+			return list(access_medical, access_morgue, access_tox, access_tox_storage, access_chemistry, access_genetics,
 			            access_teleporter, access_heads, access_tech_storage, access_security, access_sec_doors, access_brig, access_atmospherics,
 			            access_maint_tunnels, access_bar, access_janitor, access_kitchen, access_robotics, access_armory, access_hydroponics,
-			            access_theatre, access_research, access_hos, access_RC_announce, access_forensics_lockers, access_keycard_auth, access_gateway)
+			            access_research, access_hos, access_RC_announce, access_forensics_lockers, access_keycard_auth, access_gateway)
 		if("Head of Personnel")
-			return list(access_security, access_sec_doors, access_brig, access_court, access_forensics_lockers,
+			return list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			            access_tox, access_tox_storage, access_chemistry, access_medical, access_genetics, access_engine,
 			            access_emergency_storage, access_change_ids, access_ai_upload, access_eva, access_heads,
 			            access_all_personal_lockers, access_tech_storage, access_maint_tunnels, access_bar, access_janitor,
 			            access_crematorium, access_kitchen, access_robotics, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_theatre, access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
-			            access_clown, access_mime, access_hop, access_RC_announce, access_keycard_auth, access_gateway)
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)
 		if("Atmospheric Technician")
 			return list(access_atmospherics, access_maint_tunnels, access_emergency_storage, access_construction)
 		if("Bartender")
@@ -51,9 +51,9 @@
 		if("Janitor")
 			return list(access_janitor, access_maint_tunnels)
 		if("Clown")
-			return list(access_clown, access_theatre)
+			return list()
 		if("Mime")
-			return list(access_mime, access_theatre)
+			return list()
 		if("Chef")
 			return list(access_kitchen, access_morgue)
 		if("Roboticist")
@@ -124,13 +124,13 @@
 								if(!(O.target))
 									all_objectives -= O
 									O.owner.objectives -= O
-									del(O)
+									qdel(O)
 
 				//Handle job slot/tater cleanup.
 				job_master.FreeRole(job)
 
 				if(M.mind.objectives.len)
-					del(M.mind.objectives)
+					qdel(M.mind.objectives)
 					M.mind.special_role = null
 
 				// Delete them from datacore.
@@ -139,13 +139,13 @@
 					PDA_Manifest.Cut()
 				for(var/datum/data/record/R in data_core.medical)
 					if ((R.fields["name"] == M.real_name))
-						del(R)
+						qdel(R)
 				for(var/datum/data/record/T in data_core.security)
 					if ((T.fields["name"] == M.real_name))
-						del(T)
+						qdel(T)
 				for(var/datum/data/record/G in data_core.general)
 					if ((G.fields["name"] == M.real_name))
-						del(G)
+						qdel(G)
 
 				//Make an announcement and log the person entering storage.
 				//frozen_crew += "[M.real_name]"
@@ -156,6 +156,6 @@
 				// Delete the mob.
 				//This should guarantee that ghosts don't spawn.
 				M.ckey = null
-				del(M)
+				qdel(M)
 				M = null
 		return

@@ -5,9 +5,9 @@
 	icon_state = "breacher_rig_cheap"
 	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 70, bio = 100, rad = 50)
 	emp_protection = -20
-	online_slowdown = 6
-	offline_slowdown = 10
-	vision_restriction = TINT_HEAVY
+	online_slowdown = 3
+	offline_slowdown = 7
+	vision_restriction = TINT_MODERATE
 	offline_vision_restriction = TINT_BLIND
 
 	chest_type = /obj/item/clothing/suit/space/rig/unathi
@@ -33,6 +33,6 @@
 
 /obj/item/clothing/shoes/magboots/rig/unathi
 	species_restricted = list("Unathi")
-	
+
 /obj/item/clothing/gloves/rig/unathi
 	species_restricted = list("Unathi")
