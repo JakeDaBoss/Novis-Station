@@ -50,4 +50,5 @@ changes:
   - bugfix: "Fixed some area mismatches in Surgery."
   - tweak: "Made the adminhelps now display which category was selected by the player, hopefully preventing confusion."
   - tweak: "Some code updates to display some things better for admins."
+  - tweak: "Edited the Captain's office slightly."
   - imageadd: "Added an overlay for future use in effects. This will likely be used for Paralyze Mob."
