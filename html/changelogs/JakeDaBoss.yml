@@ -35,6 +35,7 @@ delete-after: True
 changes: 
   - rscadd: "Added Clean Toxins command for mods. A smaller caliber command to clean toxins in rooms rather than the entire station, available for Moderators."
   - rscadd: "Added Force Rules back for mods+."
+  - rscadd: "Added a medical laptop to med lobby."
   - rscadd: "Re-added force shuttle for mods, if it ever bugs out they can force it to leave."
   - rscdel: "Removed Vox and Vox Pariah from the spawn list. If you still are able to choose this, let Oliver know ASAP."
   - tweak: "Made the Paralyze Mob verb available to mods and mentors."
@@ -49,6 +50,7 @@ changes:
   - bugfix: "Fixed loose space tile in Surgery."
   - bugfix: "Fixed some area mismatches in Surgery."
   - bugfix: "Fixed atmos issue in Chemistry."
+  - bugfix: "Fixed bugs with Medical Examiner and Receptionist."
   - tweak: "Made the adminhelps now display which category was selected by the player, hopefully preventing confusion."
   - tweak: "Some code updates to display some things better for admins."
   - tweak: "Edited the Captain's office slightly."
