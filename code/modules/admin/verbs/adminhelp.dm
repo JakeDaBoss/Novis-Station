@@ -94,8 +94,8 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			//Options bar:  mob, details ( admin = 2, dev = 3, mentor = 4, character name (0 = just ckey, 1 = ckey and character name), link? (0 no don't make it a link, 1 do so),
 			//		highlight special roles (0 = everyone has same looking name, 1 = antags / special roles get a golden name)
 
-	var/mentor_mesg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 4, 1, 1, 0)][ai_cl]:</b> [mesg]"
-	mesg = "\blue <b><font color=red>Request for Help: </font>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [mesg]"
+	var/mentor_mesg = "<span class='warning'>Request for Help ([selected_type]): </span>[get_options_bar(mob, 4, 0, 1, 0)][ai_cl]:</b> [mesg]"
+	mesg = "<span class='danger'><b>Request for Help ([selected_type]): </b></span>[get_options_bar(mob, 2, 1, 1)][ai_cl]:</b> [mesg]"
 
 	var/admin_number_afk = 0
 
@@ -124,61 +124,59 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			if(X.is_afk())
 				admin_number_afk++
 
+	var/send_to_admin
+	var/send_to_mentor
+	var/send_to_mod
+	var/send_to_dev
+
 	switch(selected_type)
 		if("Gameplay/Job Inquiries")
-			if(mentorholders.len)
-				for(var/client/X in mentorholders) // Mentors get a message without buttons and no character name
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_mesg
-			if(modholders.len)
-				for(var/client/X in modholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
-			if(adminholders.len)
-				for(var/client/X in adminholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
+			send_to_mentor = TRUE
+			send_to_mod = TRUE
+			send_to_admin = TRUE
 		if("Rule Issue")
-			if(modholders.len)
-				for(var/client/X in modholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
-			if(adminholders.len)
-				for(var/client/X in adminholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
+			send_to_mod = TRUE
+			send_to_admin = TRUE
 		if("Technical Issue")
-			if(devholders.len)
-				for(var/client/X in mentorholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_mesg
+			send_to_dev = TRUE
 		if("Other")
-			if(mentorholders.len)
-				for(var/client/X in mentorholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_mesg
-			if(modholders.len)
-				for(var/client/X in modholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
-			if(adminholders.len)
-				for(var/client/X in adminholders)
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mesg
-			if(devholders.len)
-				for(var/client/X in mentorholders) // Devs also get "Other" requests.
-					if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
-						X << 'sound/effects/adminhelp_new.ogg'
-					X << mentor_mesg
+			send_to_mentor = TRUE
+			send_to_mod = TRUE
+			send_to_admin = TRUE
+			send_to_dev = TRUE
+
+	var/list/already_notified = list()
+	if(send_to_admin && adminholders.len)
+		for(var/client/X in adminholders)
+			if(X in already_notified) continue
+			if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+				X << 'sound/effects/adminhelp_new.ogg'
+			X << mesg
+			already_notified |= X
+
+	if(send_to_mentor && mentorholders.len)
+		for(var/client/X in mentorholders)
+			if(X in already_notified) continue
+			if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+				X << 'sound/effects/adminhelp_new.ogg'
+			X << mentor_mesg
+			already_notified |= X
+
+	if(send_to_mod && modholders.len)
+		for(var/client/X in modholders)
+			if(X in already_notified) continue
+			if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+				X << 'sound/effects/adminhelp_new.ogg'
+			X << mesg
+			already_notified |= X
+
+	if(send_to_dev && devholders.len)
+		for(var/client/X in devholders)
+			if(X in already_notified) continue
+			if(X.is_preference_enabled(/datum/client_preference/holder/play_adminhelp_ping))
+				X << 'sound/effects/adminhelp_new.ogg'
+			X << mentor_mesg
+			already_notified |= X
 
 
 /*	for(var/client/X in admins)
@@ -203,4 +201,3 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 		send2adminirc("Request for Help from [key_name(src)]: [html_decode(original_mesg)]")
 	feedback_add_details("admin_verb","AH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	return
-

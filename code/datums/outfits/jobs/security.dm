@@ -55,7 +55,7 @@
 	uniform = /obj/item/clothing/under/tactical
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
-	id_type = /obj/item/weapon/card/id/centcom
+	id_type = /obj/item/weapon/card/id/blueshield
 	pda_type = /obj/item/device/pda/security
 
 /* NEEDS EDITING TO THE NEW FORMAT, THIS IS THE BLUESHIELD ITEMSSSSSS! //Omg go fuck yourself, this is here for documentation purposes!
