@@ -1,7 +1,7 @@
 /proc/get_access(job)
 	switch(job)
-		if("Geneticist")
-			return list(access_medical, access_morgue, access_genetics)
+		if("Medical Examiner")
+			return list(access_medical, access_morgue, access_medical_examiner)
 		if("Station Engineer")
 			return list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
 		if("Assistant")
@@ -116,7 +116,7 @@
 					if(O.target && istype(O.target,/datum/mind))
 						if(O.target == M.mind)
 							if(O.owner && O.owner.current)
-								O.owner.current << "\red You get the feeling your target is no longer within your reach. Time for Plan [pick(list("A","B","C","D","X","Y","Z"))]..."
+								O.owner.current << "<span class ='warning'> You get the feeling your target is no longer within your reach. Time for Plan [pick(list("A","B","C","D","X","Y","Z"))]...</span>"
 							O.target = null
 							spawn(1) //This should ideally fire after the M is deleted.
 								if(!O) return
@@ -150,7 +150,7 @@
 				//Make an announcement and log the person entering storage.
 				//frozen_crew += "[M.real_name]"
 
-				message_admins("\blue [key_name_admin(usr)] has admin cryoed [key_name(M)]")
+				message_admins("<span class='notice'> [key_name_admin(usr)] has admin cryoed [key_name(M)]</span>")
 				log_admin("[key_name(usr)] admin cryoed [key_name(M)]")
 
 				// Delete the mob.

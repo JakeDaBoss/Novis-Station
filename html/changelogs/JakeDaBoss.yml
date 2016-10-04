@@ -33,17 +33,21 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - rscadd: "Added Clean Toxins command for admins. A smaller caliber command to clean toxins in rooms rather than the entire station, available for Moderators."
+  - rscadd: "Added Clean Toxins command for mods. A smaller caliber command to clean toxins in rooms rather than the entire station, available for Moderators."
   - rscadd: "Added Force Rules back for mods+."
   - rscadd: "Re-added force shuttle for mods, if it ever bugs out they can force it to leave."
   - rscdel: "Removed Vox and Vox Pariah from the spawn list. If you still are able to choose this, let Oliver know ASAP."
   - tweak: "Made the Paralyze Mob verb available to mods and mentors."
-  - tweak: "Made the NT Breacher Chassis slightly more bearable to move in. Delay values set for online and offline to  3 and 7 respectively, and the blindness has been set to moderate."
+  - tweak: "Made the NT Breacher Chassis slightly more bearable to move in. Delay values set for online and offline to 3 and 7 respectively, and the blindness has been set to moderate."
   - bugfix: "Fixed an unwired APC in the morgue."
   - bugfix: "Fixed stairs in morgue having the wrong position."
   - bugfix: "Fixed an unwired APC in the upper medical bay."
   - bugfix: "Fixed an airlock name in Captain's office."
   - bugfix: "Fixed missing access permissions for Blueshield."
   - bugfix: "Cleaned up and fixed adminhelps. No more duplicates!"
+  - bugfix: "Fixed AI Upload turrets firing into the Command Waiting Room."
+  - bugfix: "Fixed loose space tile in Surgery."
+  - bugfix: "Fixed some area mismatches in Surgery."
   - tweak: "Made the adminhelps now display which category was selected by the player, hopefully preventing confusion."
+  - tweak: "Some code updates to display some things better for admins."
   - imageadd: "Added an overlay for future use in effects. This will likely be used for Paralyze Mob."
