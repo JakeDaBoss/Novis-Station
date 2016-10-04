@@ -303,6 +303,9 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/weapon/card/id/medical/medicalexam
 	job_access_type = /datum/job/medicalexam
 
+/obj/item/weapon/card/id/medreceptionist
+	job_access_type = /datum/job/medreceptionist
+
 /obj/item/weapon/card/id/medical/psychiatrist
 	job_access_type = /datum/job/psychiatrist
 
@@ -419,3 +422,7 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "trader"
 	access = list(access_merchant)
 
+/obj/item/weapon/card/id/blueshield
+	job_access_type = /datum/job/blueshield
+	desc = "A card issued to Blueshield operatives, dedicating their life to command!"
+	icon_state = "centcom"
