@@ -104,7 +104,7 @@
 	exclaim_verb = "whistles loudly"
 	colour = "changeling"
 	key = "6"
-	flags = NO_STUTTER
+	flags = NO_STUTTER | WHITELISTED
 	syllables = list("beep","beep","beep","beep","beep","boop","boop","boop","bop","bop","dee","dee","doo","doo","hiss","hss","buzz","buzz","bzz","ksssh","keey","wurr","wahh","tzzz")
 	space_chance = 10
 
@@ -124,7 +124,7 @@
 	exclaim_verb = "trills"
 	colour = "alien"
 	key = "v"
-	flags = WHITELISTED
+	flags = RESTRICTED
 	space_chance = 50
 	syllables = list(
 			"ca", "ra", "ma", "sa", "na", "ta", "la", "sha", "scha", "a", "a",
