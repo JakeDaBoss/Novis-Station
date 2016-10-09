@@ -253,7 +253,7 @@
 
 	flags = NO_SCAN | IS_PLANT | NO_PAIN | NO_SLIP
 	appearance_flags = 0
-	spawn_flags = CAN_JOIN
+	spawn_flags = CAN_JOIN | IS_WHITELISTED
 
 	blood_color = "#004400"
 	flesh_color = "#907E4A"
@@ -312,7 +312,7 @@
 	spawn_flags =  CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
-	num_alternate_languages = 2
+	num_alternate_languages = 1
 	secondary_langs = list(LANGUAGE_AVISKREE)
 	name_language = LANGUAGE_AVISKREE
 	darksight = 5
