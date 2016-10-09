@@ -34,6 +34,38 @@
 		new /obj/item/clothing/under/captainformal(src)
 		return
 
+/obj/structure/closet/secure_closet/commissarhead
+	name = "Commissariat Chairman locker"
+	req_access = list(access_cent_captain)
+	icon_state = "capsecure1"
+	icon_closed = "capsecure"
+	icon_locked = "capsecure1"
+	icon_opened = "capsecureopen"
+	icon_broken = "capsecurebroken"
+	icon_off = "capsecureoff"
+
+	New()
+		..()
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/captain(src)
+		else
+			new /obj/item/weapon/storage/backpack/satchel_cap(src)
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/dufflebag/captain(src)
+		new /obj/item/device/radio/headset/heads/captain(src)
+		new /obj/item/clothing/shoes/dutyboots(src)
+		new /obj/item/weapon/gun/energy/gun(src)
+		new /obj/item/clothing/under/utility/fleet/command(src)
+		new /obj/item/clothing/accessory/rank/fleet/flag/o10(src)
+		new /obj/item/clothing/accessory/ribbon/peace(src)
+		new /obj/item/clothing/accessory/ribbon/frontier(src)
+		new /obj/item/clothing/accessory/badge/nanotrasen(src)
+		new /obj/item/clothing/suit/storage/service/fleet/command(src)
+		new /obj/item/weapon/gun/energy/gun(src)
+		new /obj/item/weapon/cartridge/captain(src)
+		new /obj/item/weapon/melee/telebaton(src)
+		new /obj/item/clothing/head/utility/fleet(src)
+		return
 
 
 /obj/structure/closet/secure_closet/hop

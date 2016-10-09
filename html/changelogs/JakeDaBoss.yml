@@ -33,5 +33,11 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - bugfix: "Fixed a broken stairwell near sub-med."
-  - tweak: "Nerfed taser bolt's agony from 80 to 50."
+  - bugfix: "Applied (hopefully) something that fixes all the stairs."
+  - bugfix: "Fixed unpowered APC in Paramedic's storage."
+  - bugfix: "Fixed a wrong wire in Upper Med."
+  - tweak: "Nerfed taser bolt's HALLOSS agony from 80 to 50."
+  - tweak: "Removed some access from the Blueshield that was unnecessary."
+  - rscadd: "Added DEVSAY back."
+  - rscadd: "First version of the triple-z Commissariat in the old abandoned office by Arrivals."
+  - rscadd: "Returned the old SendFax command for Mentors+."

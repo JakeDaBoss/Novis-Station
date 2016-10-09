@@ -327,6 +327,7 @@ var/list/admin_verbs_mentor = list(
 //	/client/proc/dsay,
 	/datum/admins/proc/paralyze_mob,
 	/client/proc/cmd_admin_subtle_message
+	/client/proc/sendFax //*allows us to send a fax to a specific fax machine.*/
 )
 
 /client/proc/add_admin_verbs()

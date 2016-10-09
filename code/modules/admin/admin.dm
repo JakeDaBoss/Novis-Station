@@ -806,6 +806,8 @@ proc/admin_notice(var/message, var/rights)
 	set desc="Globally Toggles DEVSAY"
 	set name="Toggle DEVSAY"
 
+
+
 /datum/admins/proc/toggleaban()
 	set category = "Server"
 	set desc="Respawn basically"
