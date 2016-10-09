@@ -38,7 +38,7 @@
 
 /proc/log_devsay(text)
 	if (config.log_devsay)
-		diary << "\[[time_stamp()]]DEVSAY: [text][log_end]"
+		game_log("DEV", text)
 
 /proc/log_game(text)
 	if (config.log_game)

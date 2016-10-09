@@ -51,5 +51,5 @@
 			log_and_message_admins("[key_name(usr)] sent a fax to [fax], as [who].")
 			return
 	else
-		usr<< "\red The fax is broken or has no power!"
+		usr<< "<span class='warning'> The fax is broken or has no power!"
 	feedback_add_details("admin_verb","SF") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

@@ -42,5 +42,5 @@
 		sender_name = "<span class='admin'>[sender_name]</span>"
 	for(var/client/C in admins)
 		C << "<span class='mod_channel'>" + create_text_tag("mod", "MOD:", C) + " <span class='name'>[sender_name]</span>([admin_jump_link(mob, C.holder)]): <span class='message'>[msg]</span></span>"
-		C << "<span class='dev_channel'>" + create_text_tag("dev", "DEV:", C) + " <span class='name'>[sender_name]</span>(<A HREF='?src=\ref[C.holder];adminplayerobservejump=\ref[mob]'>JMP</A>): <span class='message'>[msg]</span></span>"
+		C << "<span class='dev_channel'>" + create_text_tag("dev", "DEV:", C) + " <span class='name'>[sender_name]</span>([admin_jump_link(mob, C.holder)]): <span class='message'>[msg]</span></span>"
 	feedback_add_details("admin_verb","MS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
