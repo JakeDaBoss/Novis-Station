@@ -27,7 +27,8 @@ var/list/ai_verbs_default = list(
 	/mob/living/silicon/ai/proc/multitool_mode,
 	/mob/living/silicon/ai/proc/toggle_hologram_movement,
 	/mob/living/silicon/ai/proc/ai_power_override,
-	/mob/living/silicon/ai/proc/ai_shutdown
+	/mob/living/silicon/ai/proc/ai_shutdown,
+	/mob/living/silicon/ai/proc/change_floors
 )
 
 //Not sure why this is necessary...
@@ -558,7 +559,15 @@ var/list/ai_verbs_default = list(
 	else
 		lightNearbyCamera()
 
-
+/mob/living/silicon/ai/proc/change_floors()
+	set name = "Change Floors"
+	set desc = "Moves the AI eye to another floor."
+	set category = "Silicon Commands"
+	
+	switch(alert("Which floor would you like to go to?",,"Top","Middle","Bottom"))
+		if("Top") eyeobj.z = 3
+		if("Middle") eyeobj.z = 2
+		if("Bottom") eyeobj.z = 1
 
 // Handled camera lighting, when toggled.
 // It will get the nearest camera from the eyeobj, lighting it.
