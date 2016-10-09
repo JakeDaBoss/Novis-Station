@@ -171,7 +171,7 @@ var/list/_client_preferences_by_type
 	enabled_description = "Hear"
 	disabled_description = "Silent"
 
-/datum/client_preference/admin/show_attack_logs
+/datum/client_preference/holder/show_attack_logs
 	description = "Attack Log Messages"
 	key = "CHAT_ATTACKLOGS"
 	enabled_description = "Show"
