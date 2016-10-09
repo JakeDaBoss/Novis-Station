@@ -36,7 +36,6 @@ changes:
   - bugfix: "Applied (hopefully) something that fixes all the stairs."
   - bugfix: "Fixed unpowered APC in Paramedic's storage."
   - bugfix: "Fixed a wrong wire in Upper Med."
-  - tweak: "Nerfed taser bolt's Stun damage from 80 to 50."
   - tweak: "Removed some access from the Blueshield that was unnecessary."
   - rscadd: "Added DEVSAY back."
   - rscadd: "First version of the triple-z Commissariat in the old abandoned office by Arrivals."
