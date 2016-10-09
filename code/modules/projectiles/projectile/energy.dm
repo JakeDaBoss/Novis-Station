@@ -67,7 +67,7 @@
 /obj/item/projectile/energy/electrode/stunshot
 	nodamage = 0
 	damage = 10
-	agony = 65
+	agony = 80
 	damage_type = BURN
 
 /obj/item/projectile/energy/declone
