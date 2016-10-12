@@ -25,16 +25,3 @@
 
 	msg = sanitize(msg)
 	log_admin("MOD: [key_name(src)] : [msg]")
-
-/client/proc/cmd_dev_say(msg as text)
-	set category = "Special Verbs"
-	set name = "Devsay"
-	set hidden = 1
-
-	if(!check_rights(R_VAREDIT))	return
-
-	msg = sanitize(msg)
-	log_admin("DEV: [key_name(src)] : [msg]")
-
-
-	feedback_add_details("admin_verb","MS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
