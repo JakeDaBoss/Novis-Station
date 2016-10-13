@@ -50,7 +50,7 @@
 	light_colour = pick("#e58775", "#ffffff", "#90ff90", "#a09030")
 
 	..() //initial flash
-	
+
 	//residual illumination
 	new /obj/effect/effect/smoke/illumination(src.loc, rand(190,240) SECONDS, range=8, power=3, color=light_colour) //same lighting power as flare
 

@@ -801,6 +801,13 @@ proc/admin_notice(var/message, var/rights)
 	world.update_status()
 	feedback_add_details("admin_verb","TAI") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/datum/admins/proc/toggledevsay()
+	set category = "Server"
+	set desc="Globally Toggles DEVSAY"
+	set name="Toggle DEVSAY"
+
+
+
 /datum/admins/proc/toggleaban()
 	set category = "Server"
 	set desc="Respawn basically"

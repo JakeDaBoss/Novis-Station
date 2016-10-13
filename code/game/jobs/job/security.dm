@@ -86,8 +86,8 @@
 	economic_modifier = 4
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			            access_medical, access_ai_upload, access_eva, access_heads,
-			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
-			            access_crematorium, access_kitchen, access_cargo, access_mailsorting, access_hydroponics, access_lawyer,
+			            access_all_personal_lockers, access_maint_tunnels, access_janitor,  access_morgue,
+			            access_crematorium, access_cargo, access_hydroponics,
 			            access_chapel_office, access_library, access_research, access_mining, access_mining_station,
 			            access_gateway, access_blueshield, access_blueshield_armory)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
