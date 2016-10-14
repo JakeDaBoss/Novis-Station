@@ -209,9 +209,11 @@
 	if(R.hasarmor == 0)
 		var/datum/robot_component/armour/A = R.get_armour()
 		A.max_damage = 120
-
 		R.maxHealth = 270
-		R.damagemod = 0.70
+		if(R.damagemulti > 0.80)
+			R.damagemulti -= 0.15
+		if(R.damagethresh < 10)
+			R.damagethresh += 5
 		R.hasarmor = 1
 		return 1
 	else

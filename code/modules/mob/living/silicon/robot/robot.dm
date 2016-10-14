@@ -22,7 +22,8 @@
 	var/integrated_light_power = 6
 	var/datum/wires/robot/wires
 	
-	var/damagemod = 1
+	var/damagemulti = 1
+	var/damagethresh = 0
 
 //Icon stuff
 
