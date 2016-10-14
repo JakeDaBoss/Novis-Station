@@ -129,7 +129,11 @@
 			brute -= absorb_brute
 			burn -= absorb_burn
 			src << "\red Your shield absorbs some of the impact!"
-
+	
+	brute = (brute * damagemod)
+	burn = (burn * damagemod)
+	sharp = (sharp * damagemod)
+	
 	var/datum/robot_component/armour/A = get_armour()
 	if(A)
 		A.take_damage(brute,burn,sharp)

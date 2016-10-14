@@ -34,6 +34,8 @@
 	qdel(R.module)
 	R.module = null
 	R.updatename("Default")
+	R.hasarmor = 0
+	R.hasrepair = 0
 
 	return 1
 
@@ -195,3 +197,40 @@
 
 	R.emagged = 1
 	return 1
+
+/obj/item/borg/upgrade/armour
+	name = "reactive plating Module"
+	desc = "Used to install reactive armour plating, increasing a robots resistance to harm."
+	icon_state = "cyborg_upgrade2"
+	require_module = 1
+
+/obj/item/borg/upgrade/armour/action(var/mob/living/silicon/robot/R)
+	if(..()) return 0
+	if(R.hasarmor == 0)
+		var/datum/robot_component/armour/A = R.get_armour()
+		A.max_damage = 120
+
+		R.maxHealth = 270
+		R.damagemod = 0.70
+		R.hasarmor = 1
+		return 1
+	else
+		usr << "This module is already installed!"
+		return 0
+
+/obj/item/borg/upgrade/repair
+	name = "self repair module"
+	desc = "An internal module designed to allow robots to repair themself and others."
+	icon_state = "cyborg_upgrade3"
+	require_module = 1
+
+/obj/item/borg/upgrade/repair/action(var/mob/living/silicon/robot/R)
+	if(..()) return 0
+	if(R.hasrepair == 0)
+		R.module.modules += new/obj/item/borg/repairtool(R.module)
+		R.hasrepair = 1
+		return 1
+	else
+		usr << "This module is already installed!"
+		return 0
+

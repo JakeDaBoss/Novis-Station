@@ -20,10 +20,10 @@
 		return 0
 
 	playsound(loc, 'sound/weapons/Egloves.ogg', 50, 1, -1)
-	
+
 	M.apply_effect(5, STUTTER)
 	M.stun_effect_act(0, 70, check_zone(hit_zone), src)
-	
+
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		H.forcesay(hit_appends)
@@ -34,6 +34,32 @@
 	name = "overdrive"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "shock"
+
+/obj/item/borg/repairtool
+	name = "Repairtool"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "shock"
+	var/lastuse = 0
+
+/obj/item/borg/repairtool/attack(mob/living/M as mob, mob/user as mob)
+	if (!istype(M) || !istype(user))
+		return 0
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	var/charge = round((world.time - lastuse)/6)	
+	if (charge < 100)
+		user << "<span class='notice'>The device needs more time to recharge. [charge] percent charged.</span>"
+		return 0
+	if (istype(M,/mob/living/silicon/robot))	//Repairing cyborgs
+		var/mob/living/silicon/robot/R = M
+		if ((R.getBruteLoss() + R.getFireLoss()) > 40)
+			R.adjustBruteLoss(-20)
+			R.adjustFireLoss(-20)
+			R.updatehealth()
+			lastuse = world.time
+			user.visible_message("<span class='notice'>\The [user] performed crude repairs on [R].</span>",\
+			"<span class='notice'>You repair some damage to [R].</span>")
+		else
+			user << "<span class='notice'>This device lacks the capacity to repair such minor damage.</span>"
 
 /**********************************************************************
 						HUD/SIGHT things
