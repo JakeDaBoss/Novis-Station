@@ -58,8 +58,8 @@
 			return
 
 		// Antagonistic cyborgs? Left here for downstream
-		if(target.mind && target.mind.special_role && target.emagged)
-			target << "Extreme danger.  Termination codes detected.  Scrambling security codes and automatic AI unlink triggered."
+		if(target.mind && (target.mind.special_role || target.emagged))
+			target << "<span class='danger'>Extreme danger.  Termination codes detected.  Scrambling security codes and automatic AI unlink triggered.</span>"
 			target.ResetSecurityCodes()
 		else
 			message_admins("<span class='notice'>[key_name_admin(usr)] detonated [target.name]!</span>")
@@ -89,6 +89,10 @@
 			return
 
 		if(!target || !istype(target))
+			return
+
+		if(target.mind && (target.mind.special_role || target.emagged))
+			target << "<span class='warning'>Moderate danger.  Lockdown codes detected. Disregarding command.</span>"
 			return
 
 		if(target.SetLockdown(!target.lockcharge))
@@ -153,6 +157,9 @@
 			if(istype(R, /mob/living/silicon/robot/drone))
 				continue
 			// Ignore antagonistic cyborgs
+			if(R.mind && (R.mind.special_role || R.emagged))
+				R << "<span class='danger'>Extreme danger. Mass termination codes detected. Scrambling security codes and automatic AI unlink triggered. Proceed with caution.</span>"
+				R.ResetSecurityCodes()
 			if(R.scrambledcodes)
 				continue
 			R << "<span class='danger'>Self-destruct command received.</span>"
