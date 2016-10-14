@@ -15,8 +15,8 @@ var/global/floorIsLava = 0
 	log_attack(text)
 	var/rendered = "<span class=\"log_message\"><span class=\"prefix\">ATTACK:</span> <span class=\"message\">[text]</span></span>"
 	for(var/client/C in admins)
-		if(R_ADMIN & C.holder.rights)
-			if(C.is_preference_enabled(/datum/client_preference/admin/show_attack_logs))
+		if(R_MOD & C.holder.rights)
+			if(C.is_preference_enabled(/datum/client_preference/holder/show_attack_logs))
 				var/msg = rendered
 				C << msg
 
@@ -800,6 +800,13 @@ proc/admin_notice(var/message, var/rights)
 	log_admin("[key_name(usr)] toggled AI allowed.")
 	world.update_status()
 	feedback_add_details("admin_verb","TAI") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/datum/admins/proc/toggledevsay()
+	set category = "Server"
+	set desc="Globally Toggles DEVSAY"
+	set name="Toggle DEVSAY"
+
+
 
 /datum/admins/proc/toggleaban()
 	set category = "Server"

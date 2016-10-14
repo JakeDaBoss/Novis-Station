@@ -284,19 +284,19 @@
 	return
 
 
-/obj/structure/closet/wardrobe/genetics_white
-	name = "genetics wardrobe"
+/obj/structure/closet/wardrobe/medexam_white
+	name = "Medical Examiner wardrobe"
 	icon_state = "white"
 	icon_closed = "white"
 
 /obj/structure/closet/wardrobe/genetics_white/New()
 	..()
-	new /obj/item/clothing/under/rank/geneticist(src)
-	new /obj/item/clothing/under/rank/geneticist(src)
+	new /obj/item/clothing/under/rank/medexam(src)
+	new /obj/item/clothing/under/rank/medexam(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/genetics(src)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/genetics(src)
+	new /obj/item/clothing/suit/storage/toggle/labcoat/medexam(src)
+	new /obj/item/clothing/suit/storage/toggle/labcoat/medexam(src)
 	return
 
 

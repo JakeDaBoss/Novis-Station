@@ -209,6 +209,7 @@ var/list/admin_verbs_paranoid_debug = list(
 
 var/list/admin_verbs_possess = list(
 	/proc/possess,
+	/client/proc/admincryo,
 	/proc/release
 	)
 var/list/admin_verbs_permissions = list(
@@ -226,6 +227,7 @@ var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/toggleenter,
 	/datum/admins/proc/toggleguests,
 	/datum/admins/proc/announce,
+	/client/proc/clean,
 	/client/proc/colorooc,
 	/client/proc/admin_ghost,
 	/client/proc/toggle_view_range,
@@ -296,6 +298,8 @@ var/list/admin_verbs_mod = list(
 	/datum/admins/proc/PlayerNotes,
 	/client/proc/admin_ghost,			// allows us to ghost/reenter body at will,
 	/client/proc/cmd_mod_say,
+	/client/proc/cleartox,
+	/client/proc/clean,					// Cleans the station
 	/datum/admins/proc/show_player_info,
 	/client/proc/player_panel_new,
 	/client/proc/dsay,
@@ -305,8 +309,10 @@ var/list/admin_verbs_mod = list(
 	/client/proc/jobbans,
 	/client/proc/cmd_admin_subtle_message, // send an message to somebody as a 'voice in their head',
 	/client/proc/aooc,
+	/client/proc/forceshuttles,
 	/datum/admins/proc/paralyze_mob,
-	/datum/admins/proc/sendFax
+	/datum/admins/proc/sendFax,
+	/client/proc/FRules
 
 )
 
@@ -318,7 +324,9 @@ var/list/admin_verbs_mentor = list(
 	/client/proc/cmd_mod_say,
 	/datum/admins/proc/show_player_info,
 //	/client/proc/dsay,
-	/client/proc/cmd_admin_subtle_message
+	/datum/admins/proc/paralyze_mob,
+	/client/proc/cmd_admin_subtle_message,
+	/client/proc/sendFax //*allows us to send a fax to a specific fax machine.*/
 )
 
 /client/proc/add_admin_verbs()

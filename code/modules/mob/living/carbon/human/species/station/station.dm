@@ -55,7 +55,7 @@
 	heat_level_2 = 480 //Default 400
 	heat_level_3 = 1100 //Default 1000
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#34AF10"
@@ -119,7 +119,7 @@
 
 	primitive_form = "Farwa"
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#AFA59E"
@@ -159,7 +159,7 @@
 	min_age = 19
 	max_age = 90
 
-	spawn_flags = CAN_JOIN | IS_WHITELISTED
+	spawn_flags = CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8CD7A3"
@@ -309,10 +309,10 @@
  	heavy society with a tech level resembling that of early 2000s earth with advances in electricity. \
  	They are still acclimating to human society, and their native language is Aviachirp, a language made mostly of high pitched chirps."
 	gluttonous = GLUT_TINY
-	spawn_flags =  CAN_JOIN | IS_WHITELISTED
+	spawn_flags =  CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
-	num_alternate_languages = 2
+	num_alternate_languages = 1
 	secondary_langs = list(LANGUAGE_AVISKREE)
 	name_language = LANGUAGE_AVISKREE
 	darksight = 5

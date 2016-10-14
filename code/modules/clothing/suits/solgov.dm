@@ -66,6 +66,12 @@
 	icon_state = "blackservice_com"
 	item_state = "blackservice_com"
 
+/obj/item/clothing/suit/storage/service/fleet/command
+	name = "fleet command jacket"
+	desc = "A uniform service jacket belonging to the SCG Naval Fleet. It has gold buttons and gold trim."
+	icon_state = "blackservice_com"
+	item_state = "blackservice_com"
+
 
 /obj/item/clothing/suit/storage/service/marine
 	name = "marine coat"
