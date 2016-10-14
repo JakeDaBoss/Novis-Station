@@ -21,6 +21,9 @@
 	var/crisis_override = 0
 	var/integrated_light_power = 6
 	var/datum/wires/robot/wires
+	
+	var/damagemulti = 1
+	var/damagethresh = 0
 
 //Icon stuff
 
@@ -65,6 +68,8 @@
 
 	var/opened = 0
 	var/emagged = 0
+	var/hasrepair = 0
+	var/hasarmor = 0
 	var/wiresexposed = 0
 	var/locked = 1
 	var/has_power = 1

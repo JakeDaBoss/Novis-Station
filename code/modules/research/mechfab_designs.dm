@@ -375,6 +375,20 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 25000, "phoron" = 10000, "gold" = 1000, "silver" = 1000)
 	build_path = /obj/item/borg/upgrade/rcd
 
+/datum/design/item/robot_upgrade/armour
+	name = "armor module"
+	desc = "Used to install reactive armour plating, increasing a robots resistance to harm."
+	id = "borg_armour module"
+	materials = list(DEFAULT_WALL_MATERIAL = 50000)
+	build_path = /obj/item/borg/upgrade/armour
+
+/datum/design/item/robot_upgrade/repair
+	name = "repair tool module"
+	desc = "An internal module designed to allow robots to repair themself and others."
+	id = "borg_repair_module"
+	materials = list(DEFAULT_WALL_MATERIAL = 25000, "gold" = 1000, "silver" = 1000)
+	build_path = /obj/item/borg/upgrade/repair
+
 /datum/design/item/robot_upgrade/syndicate
 	name = "Illegal upgrade"
 	desc = "Allows for the construction of lethal upgrades for cyborgs."
