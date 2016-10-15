@@ -55,6 +55,7 @@
 	uniform = /obj/item/clothing/under/tactical
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
+	l_ear = /obj/item/device/radio/headset/heads/blueshield
 	id_type = /obj/item/weapon/card/id/blueshield
 	pda_type = /obj/item/device/pda/security
 
