@@ -70,6 +70,8 @@
 	var/emagged = 0
 	var/hasrepair = 0
 	var/hasarmor = 0
+	var/hasegun = 0
+	var/hasthermal = 0
 	var/wiresexposed = 0
 	var/locked = 1
 	var/has_power = 1
