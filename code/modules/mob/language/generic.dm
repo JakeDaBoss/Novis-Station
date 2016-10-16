@@ -62,11 +62,14 @@
 	colour = "rough"
 	key = "3"
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
+<<<<<<< HEAD
+=======
 
 /datum/language/sign
 	name = "Sign language"
 	desc = "A sign language commonly used for those who are deaf or mute."
-	signlang_verb = list("signs")
+	signlang_verb = list("gestures")
 	colour = "say_quote"
 	key = "s"
 	flags = SIGNLANG | NO_STUTTER | NO_TALK_MSG
+>>>>>>> 7cea929... minor change to sign language
