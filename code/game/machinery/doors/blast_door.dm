@@ -180,22 +180,6 @@ obj/machinery/door/blast/regular/open
 	density = 0
 	opacity = 0
 
-// SUBTYPE: 1x2
-// 1x2 doors, now with more tiles!
-obj/machinery/door/blast/1x2vert
-	icon_state_open = "pdoor0"
-	icon_state_opening = "pdoorc0"
-	icon_state_closed = "pdoor1"
-	icon_state_closing = "pdoorc1"
-	icon_state = "pdoor1"
-	maxhealth = 600
-	block_air_zones = 1
-
-obj/machinery/door/blast/1x2vert/open
-	icon_state = "pdoor0"
-	density = 0
-	opacity = 0
-
 // SUBTYPE: Shutters
 // Nicer looking, and also weaker, shutters. Found in kitchen and similar areas.
 /obj/machinery/door/blast/shutters
