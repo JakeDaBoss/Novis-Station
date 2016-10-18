@@ -171,7 +171,7 @@
 	suit_type = "hazmat hardsuit"
 	desc = "An Anomalous Material Interaction hardsuit that protects against the strangest energies the universe can throw at it."
 	icon_state = "science_rig"
-	armor = list(melee = 45, bullet = 5, laser = 45, energy = 80, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 45, bullet = 5, laser = 60, energy = 80, bomb = 60, bio = 100, rad = 100)
 	online_slowdown = 1
 	offline_vision_restriction = TINT_HEAVY
 
@@ -215,8 +215,8 @@
 	suit_type = "rescue hardsuit"
 	desc = "A durable suit designed for medical rescue in high risk areas."
 	icon_state = "medical_rig"
-	armor = list(melee = 30, bullet = 15, laser = 20, energy = 60, bomb = 30, bio = 100, rad = 100)
-	online_slowdown = 1
+	armor = list(melee = 30, bullet = 15, laser = 60, energy = 60, bomb = 30, bio = 100, rad = 100)
+	online_slowdown = -0.5
 	offline_vision_restriction = TINT_HEAVY
 
 	chest_type = /obj/item/clothing/suit/space/rig/medical

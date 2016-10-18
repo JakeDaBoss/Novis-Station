@@ -39,6 +39,11 @@
 	
 	var/lightfail = 0
 
+/obj/item/weapon/gun/energy/gun/nuclear/mounted
+	name = "mounted energy gun"
+	max_shots = 15
+	fire_delay = 5
+
 //override for failcheck behaviour
 /obj/item/weapon/gun/energy/gun/nuclear/process()
 	charge_tick++

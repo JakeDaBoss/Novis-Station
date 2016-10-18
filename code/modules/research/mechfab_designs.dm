@@ -389,11 +389,27 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 25000, "gold" = 1000, "silver" = 1000)
 	build_path = /obj/item/borg/upgrade/repair
 
+/datum/design/item/robot_upgrade/thermal
+	name = "unauthorized thermal module"
+	desc = "A highly illegal module that can be used to install unlicensed thermal spectrum scanners in cyborgs."
+	id = "borg_thermal_module"
+	req_tech = list(TECH_COMBAT = 4, TECH_ILLEGAL = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 15000, "gold" = 1000, "silver" = 1000, "phoron" = 5000)
+	build_path = /obj/item/borg/upgrade/thermal
+
+/datum/design/item/robot_upgrade/egun
+	name = "unauthorized energy gun module"
+	desc = "A highly illegal module that can be used to install unlicensed lethal weaponry in cyborgs."
+	id = "borg_egun_module"
+	req_tech = list(TECH_COMBAT = 4, TECH_ILLEGAL = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 15000, "gold" = 1000, "silver" = 1000)
+	build_path = /obj/item/borg/upgrade/egun
+
 /datum/design/item/robot_upgrade/syndicate
 	name = "Illegal upgrade"
 	desc = "Allows for the construction of lethal upgrades for cyborgs."
 	id = "borg_syndicate_module"
-	req_tech = list(TECH_COMBAT = 4, TECH_ILLEGAL = 3)
+	req_tech = list(TECH_COMBAT = 4, TECH_ILLEGAL = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 15000, "diamond" = 10000)
 	build_path = /obj/item/borg/upgrade/syndicate
 
@@ -434,7 +450,7 @@
 	name = "Cable layer"
 	id = "mech_cable_layer"
 	build_path = /obj/item/mecha_parts/mecha_equipment/tool/cable_layer
-	
+
 /datum/design/item/mecha/flaregun
 	name = "Flare launcher"
 	id = "mecha_flare_gun"

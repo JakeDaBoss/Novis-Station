@@ -36,6 +36,8 @@
 	R.updatename("Default")
 	R.hasarmor = 0
 	R.hasrepair = 0
+	R.hasegun = 0
+	R.hasthermal = 0
 
 	return 1
 
@@ -222,7 +224,7 @@
 
 /obj/item/borg/upgrade/repair
 	name = "self repair module"
-	desc = "An internal module designed to allow robots to repair themself and others."
+	desc = "An internal module designed to allow robots to repair themselves and others."
 	icon_state = "cyborg_upgrade3"
 	require_module = 1
 
@@ -236,3 +238,34 @@
 		usr << "This module is already installed!"
 		return 0
 
+/obj/item/borg/upgrade/egun
+	name = "unauthorized energy gun module"
+	desc = "A highly illegal module that can be used to install unlicensed lethal weaponry in cyborgs."
+	icon_state = "cyborg_upgrade3"
+	require_module = 1
+
+/obj/item/borg/upgrade/egun/action(var/mob/living/silicon/robot/R)
+	if(..()) return 0
+	if(R.hasegun == 0)
+		R.module.modules += new/obj/item/weapon/gun/energy/gun/nuclear/mounted(R.module)
+		R.hasegun = 1
+		return 1
+	else
+		usr << "This module is already installed!"
+		return 0
+
+/obj/item/borg/upgrade/thermal
+	name = "unauthorized thermal module"
+	desc = "A highly illegal module that can be used to install unlicensed thermal spectrum scanners in cyborgs."
+	icon_state = "cyborg_upgrade3"
+	require_module = 1
+
+/obj/item/borg/upgrade/thermal/action(var/mob/living/silicon/robot/R)
+	if(..()) return 0
+	if(R.hasthermal == 0)
+		R.module.modules += new/obj/item/borg/sight/thermal(R.module)
+		R.hasthermal = 1
+		return 1
+	else
+		usr << "This module is already installed!"
+		return 0
