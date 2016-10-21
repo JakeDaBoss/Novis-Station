@@ -89,6 +89,8 @@
 		role_text_plural = role_text
 	if(config.protect_roles_from_antagonist)
 		restricted_jobs |= protected_jobs
+	if(config.antag_age_restriction)
+		minimum_player_age = config.antag_age_restriction
 	if(antaghud_indicator)
 		if(!hud_icon_reference)
 			hud_icon_reference = list()
