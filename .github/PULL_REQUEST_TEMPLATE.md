@@ -4,6 +4,7 @@ Examples which require a changelog entry include:
 * Adding/removing objects that players may interact with, or the way they function.
 * Adding/removing/altering admin tools.
 * Changing the map.
+* Larger bug fixes of a rather critical system.
 
 Examples were changelog entries are optional/not typically required:
 * Cosmetic changes such as descriptions, sound effects, etc.
