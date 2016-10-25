@@ -426,3 +426,17 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/blueshield
 	desc = "A card issued to Blueshield operatives, dedicating their life to command!"
 	icon_state = "centcom"
+
+// COMMISSARIAT ID-CARDS!
+
+/obj/item/weapon/card/id/commissar_secretary
+	name = "identification card"
+	desc = "A card which represents the Secretary of the prestigious Commissariat."
+	icon_state = "centcomNew"
+	job_access_type = /datum/job/commissar_secretary
+
+/obj/item/weapon/card/id/commissar_chair_crew
+	name = "identification card"
+	desc = "A golden card which shows power and might."
+	icon_state = "centcomGold"
+	job_access_type = /datum/job/captain
