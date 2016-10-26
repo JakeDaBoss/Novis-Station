@@ -183,3 +183,27 @@
 	attacktext = "claws"
 
 	wizardy_spells = list(/spell/targeted/subjugation)
+
+
+/mob/living/simple_animal/glacier
+	name = "glacier"
+	desc = "A fast, armoured predator accustomed to hiding and ambushing in cold terrain. It is the pet of universal Ice Queen Nina Taylor."
+	faction = "neutral"
+	icon_state = "samak"
+	icon_living = "samak"
+	icon_dead = "samak_dead"
+	icon = 'icons/jungle.dmi'
+	response_help = "pets"
+	response_disarm = "pushes"
+	response_harm = "hits"
+	maxHealth = 125
+	health = 125
+	speed = 1
+	melee_damage_lower = 5
+	melee_damage_upper = 15
+	attacktext = "mauled"
+	cold_damage_per_tick = 0
+	speak_chance = 5
+	speak = list("Hruuugh!","Hrunnph")
+	emote_see = list("paws the ground","shakes its mane","stomps")
+	emote_hear = list("snuffles")

@@ -66,7 +66,7 @@
 	faction = "Station"
 	minimal_player_age = 7
 	total_positions = 2
-	spawn_positions = 3
+	spawn_positions = 2
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 5

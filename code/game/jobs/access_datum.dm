@@ -459,6 +459,24 @@
 	desc = "Code Gold"
 	access_type = ACCESS_TYPE_CENTCOM
 
+/var/const/access_commissar_secretary = 110//Commmissariat Secretary
+/datum/access/commissar_secretary
+	id = access_commissar_secretary
+	desc = "The Secretary of the Prestigious Commissariat! Boring..."
+	access_type = ACCESS_REGION_COMMISSAR
+
+/var/const/access_commissar_crew = 111//Crew Commissar
+/datum/access/commissar_crew
+	id = access_commissar_crew
+	desc = "Crew Affairs"
+	access_type = ACCESS_REGION_COMMISSAR
+
+/var/const/access_commissar_chairman = 199//Head Commissar - Nina Taylor / Ollie.
+/datum/access/commissar_chairman
+	id = access_commissar_chairman
+	desc = "Commissar Chairman"
+	access_type = ACCESS_REGION_COMMISSAR
+
 /***************
 * Antag access *
 ***************/

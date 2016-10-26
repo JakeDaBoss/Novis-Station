@@ -223,6 +223,29 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/entertainment
 
+/* COMMISSARIAT HEADSETS!*/
+
+/obj/item/device/radio/headset/commissar_secretary
+	name = "secretary's radio headset"
+	desc = "The headset of the commissariat Secretary."
+	icon_state = "cent_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/commissariatsecretary
+
+/obj/item/device/radio/headset/commissar_crew
+	name = "crew affairs' radio headset"
+	desc = "The headset of the Commissar of Crew Affairs."
+	icon_state = "cent_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/commissar
+
+/obj/item/device/radio/headset/commissar_chairman
+	name = "chairman's radio headset"
+	desc = "The big boss' headset."
+	icon_state = "cent_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/commissar
+
 /obj/item/device/radio/headset/attackby(obj/item/weapon/W as obj, mob/user as mob)
 //	..()
 	user.set_machine(src)

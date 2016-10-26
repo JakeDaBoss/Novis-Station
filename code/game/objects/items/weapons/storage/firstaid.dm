@@ -108,6 +108,8 @@
 /obj/item/weapon/storage/firstaid/surgery
 	name = "surgery kit"
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport."
+	icon_state = "purplefirstaid"
+	item_state = "firstaid-advanced"
 
 	startswith = list(
 		/obj/item/weapon/bonesetter,

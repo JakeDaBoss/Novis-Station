@@ -122,6 +122,21 @@
 	name = "\improper ERT radio encryption key"
 	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Supply" = 1, "Service" = 1)
 
+/obj/item/device/encryptionkey/commissariatsecretary
+	name = "\improper Commissariat Secretary"
+	channels = list("Commissariat" = 1)
+
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"
 	channels = list("Entertainment" = 1)
+
+// COMMISSARIAT STUFF!
+
+/obj/item/device/encryptionkey/commissariatsecretary
+	name = "\improper Commissariat Secretary Encryption Key"
+	channels = list("Commissariat" = 1)
+
+
+/obj/item/device/encryptionkey/commissar
+	name = "\improper Commissar Encryption Key"
+	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Supply" = 1, "Service" = 1, "Commissariat" = 1)
