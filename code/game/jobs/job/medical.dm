@@ -28,7 +28,7 @@
 	faction = "Station"
 	minimal_player_age = 3
 	total_positions = 5
-	spawn_positions = 5
+	spawn_positions = 7
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 7
@@ -47,7 +47,7 @@
 	faction = "Station"
 	minimal_player_age = 5
 	total_positions = 1
-	spawn_positions = 1
+	spawn_positions = 2
 	supervisors = "the chief medical officer"
 	selection_color = "#013d3b"
 	economic_modifier = 7
@@ -57,6 +57,23 @@
 		"Immunologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist,
 		"Pathologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor/virologist
+
+/datum/job/nurse
+	title = "Nurse"
+	department = "Medical"
+	department_flag = MED
+	faction = "Station"
+	minimal_player_age = 3
+	total_positions = 3
+	spawn_positions = 5
+	supervisors = "the chief medical officer"
+	selection_color = "#013d3b"
+	economic_modifier = 7
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology)
+	alt_titles = list(
+		"Orderly" = /decl/hierarchy/outfit/job/medical/doctor/nurse)
+	outfit_type = /decl/hierarchy/outfit/job/medical/doctor/nurse
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist

@@ -1,9 +1,10 @@
 /datum/job/commissar_secretary
 	title = "Commissariat Secretary"
+	department = "Commissariat"
 	head_position = 0
 	department_flag = COM|CIV
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "central command"
 	selection_color = "#82CAFF"
@@ -20,10 +21,11 @@
 
 /datum/job/commissar_crew
 	title = "Commissar of Crew Affairs"
+	department = "Commissariat"
 	head_position = 1
 	department_flag = COM|CIV
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "central command"
 	selection_color = "#157DEC"
@@ -44,10 +46,11 @@
 
 /datum/job/commissar_chairman
 	title = "Commissar Chairman"
+	department = "Commissariat"
 	head_position = 1
 	department_flag = COM|CIV
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "central command"
 	selection_color = "#157DEC"
