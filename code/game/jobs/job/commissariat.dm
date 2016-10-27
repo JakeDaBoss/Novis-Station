@@ -1,4 +1,10 @@
-/datum/job/commissar_secretary
+// #######################
+// #AWAITING PROPER SPAWN#
+// #####SYSTEM!!!!!!######
+// #######################
+
+
+/*/datum/job/commissar_secretary
 	title = "Commissariat Secretary"
 	department = "Commissariat"
 	head_position = 0
@@ -26,7 +32,7 @@
 	department_flag = COM|CIV
 	faction = "Station"
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	supervisors = "central command"
 	selection_color = "#157DEC"
 	req_admin_notify = 1
@@ -51,7 +57,7 @@
 	department_flag = COM|CIV
 	faction = "Station"
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	supervisors = "central command"
 	selection_color = "#157DEC"
 	req_admin_notify = 1
@@ -68,3 +74,4 @@
 	. = ..()
 	if(.)
 		H.implant_loyalty(src)
+*/
