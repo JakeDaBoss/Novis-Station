@@ -428,7 +428,7 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "centcom"
 
 // COMMISSARIAT ID-CARDS!
-
+/*
 /obj/item/weapon/card/id/commissar_secretary
 	name = "identification card"
 	desc = "A card which represents the Secretary of the prestigious Commissariat."
@@ -440,3 +440,4 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A golden card which shows power and might."
 	icon_state = "centcomGold"
 	job_access_type = /datum/job/captain
+*/

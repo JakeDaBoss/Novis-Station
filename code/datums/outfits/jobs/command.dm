@@ -34,7 +34,7 @@
 	backpack_contents = list(/obj/item/weapon/storage/box/ids = 1)
 
 // COMMISSAR STUFF.
-
+/*
 /decl/hierarchy/outfit/job/commissariat_secretary
 	name = OUTFIT_JOB_NAME("Commissariat Secretary")
 	uniform = /obj/item/clothing/under/suit_jacket/navy
@@ -58,3 +58,4 @@
 	shoes = /obj/item/clothing/shoes/brown
 	id_type = /obj/item/weapon/card/id/commissar_chair_crew
 	pda_type = /obj/item/device/pda/commissariat
+*/
