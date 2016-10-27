@@ -6061,7 +6061,7 @@
 "cmC" = (/obj/machinery/atmospherics/valve/digital{dir = 4},/turf/simulated/floor/tiled,/area/engineering/atmos)
 "cmD" = (/obj/machinery/meter,/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/tiled,/area/engineering/atmos)
 "cmE" = (/obj/structure/disposalpipe/segment,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/tiled,/area/engineering/atmos)
-"cmF" = (/obj/machinery/atmospherics/tvalve/digital{dir = 4},/turf/space,/area/engineering/atmos)
+"cmF" = (/obj/machinery/atmospherics/tvalve/digital{dir = 4},/turf/simulated/floor/tiled,/area/engineering/atmos)
 "cmG" = (/obj/machinery/door/firedoor/border_only,/obj/machinery/door/airlock/atmos{name = "Atmospherics Maintenance"; req_access = list(12,24)},/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/tiled,/area/engineering/atmos/storage)
 "cmH" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/plating,/area/engineering/atmos/storage)
 "cmI" = (/obj/machinery/portable_atmospherics/powered/pump/filled,/obj/machinery/light/small{dir = 1},/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/plating,/area/engineering/atmos/storage)
