@@ -1,6 +1,11 @@
 // BEGIN_INTERNALS
 /*
+LAST_COMPILE_TIME: 1477754880
+DIR: code code\datums code\datums\outfits code\datums\outfits\jobs code\game code\game\gamemodes code\game\gamemodes\cult code\game\gamemodes\cult\cultify code\game\jobs code\game\jobs\job code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage code\game\objects\structures code\game\objects\structures\crates_lockers code\game\objects\structures\crates_lockers\closets code\game\objects\structures\crates_lockers\closets\secure icons icons\misc icons\mob maps maps\exodus maps\exodus\prison maps\overmap_example maps\overmap_example\bearcat maps\overmap_example\sector maps\torch sound sound\music tgui tgui\src tgui\src\components 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 510.1347
+WINDOW: maps\exodus\exodus-0.dmm;maps\exodus\exodus-1.dmm;maps\exodus\prison\prison-1.dmm;code\game\jobs\access_datum.dm;code\game\objects\structures\crates_lockers\closets\secure\security.dm;code\game\objects\items\weapons\storage\boxes.dm;icons\mob\uniform.dmi;maps\exodus\exodus.dm;maps\overmap_example\overmap_example.dm
+FILE: maps\exodus\exodus.dm
 */
 // END_INTERNALS

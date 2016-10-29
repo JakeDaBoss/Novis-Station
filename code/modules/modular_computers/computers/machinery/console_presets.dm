@@ -89,3 +89,20 @@
 	cpu.hard_drive.store_file(new/datum/computer_file/program/chatclient())
 	cpu.hard_drive.store_file(new/datum/computer_file/program/nttransfer())
 	cpu.hard_drive.store_file(new/datum/computer_file/program/newsbrowser())
+
+// ===== CORRECTIONS CONSOLES =====
+/obj/machinery/modular_computer/console/preset/corrections
+	 console_department = "Corrections"
+	 desc = "A stationary computer. This one comes preloaded with the ID Card modification program."
+	 _has_id_slot = 1
+	 _has_printer = 1
+
+/obj/machinery/modular_computer/console/preset/command/install_programs()
+	cpu.hard_drive.store_file(new/datum/computer_file/program/chatclient())
+	cpu.hard_drive.store_file(new/datum/computer_file/program/card_mod())
+
+/obj/machinery/modular_computer/console/preset/corrections/card_modifier
+	 console_department = "Corrections"
+	 desc = "A stationary computer. This one comes preloaded with the ID Card modification program."
+	 _has_id_slot = 1
+	 _has_printer = 1

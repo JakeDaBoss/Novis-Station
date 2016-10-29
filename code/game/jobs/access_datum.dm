@@ -506,3 +506,20 @@
 	id = access_merchant
 	desc = "Merchant"
 	access_type = ACCESS_TYPE_NONE
+
+
+/****************
+* Prison Access *
+****************/
+
+/var/const/access_genpop = 1901
+/datum/access/genpop
+	id = access_genpop
+	desc = "Gen Pop Access (Public Minimal Security)"
+	access_type = ACCESS_REGION_GENERAL
+
+/var/const/access_prison_proc = 2101
+/datum/access/prison_proc
+	id = access_prison_proc
+	desc = "Prison Processing"
+	access_type = ACCESS_REGION_CORRECTIONS
