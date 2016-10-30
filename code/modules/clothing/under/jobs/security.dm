@@ -196,3 +196,22 @@
 	icon_state = "wardenblueclothes"
 	item_state = "ba_suit"
 	worn_state = "wardenblueclothes"
+
+
+/*
+ * Corrections
+ */
+
+/obj/item/clothing/under/rank/security/corrections/blue
+	name = "Correctional Officer Uniform"
+	desc = "A stylish blue outfit. The name of the officer it was on is stitched into it with white lettering."
+	icon_state = "corrections_blue"
+	item_state = "corrections_blue"
+	worn_state = "corrections_blue"
+
+/obj/item/clothing/under/rank/security/corrections/white
+	name = "Correctional Officer Uniform"
+	desc = "A neutral white attire. The name of the officer it was on is stitched into it with black lettering."
+	icon_state = "corrections_white"
+	item_state = "corrections_white"
+	worn_state = "corrections_white"

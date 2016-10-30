@@ -458,11 +458,13 @@
 		new /obj/item/clothing/gloves/thick/black(src)
 		new /obj/item/clothing/mask/balaclava/tactical(src)
 
-/obj/structure/closet/secure_closet/corrections
 
+					/*************
+					*Prison stuff*
+					*************/
 /obj/structure/closet/secure_closet/corrections/intake
 	name = "intake locker"
-	req_access = list(access_prison_proc)
+	req_access = list(access_prison_security)
 	icon_state = "sec1"
 	icon_closed = "sec"
 	icon_locked = "sec1"
@@ -476,4 +478,20 @@
 		new /obj/item/weapon/storage/box/ids(src)
 		new /obj/item/weapon/storage/box/ids(src)
 		new /obj/item/weapon/storage/box/ids(src)
+		return
+
+/obj/structure/closet/secure_closet/corrections/co_equipment
+	name = "equipment locker"
+	req_access = list(access_prison_security)
+	icon_state = "sec1"
+	icon_closed = "sec"
+	icon_locked = "sec1"
+	icon_opened = "secopen"
+	icon_broken = "secbroken"
+	icon_off = "secoff"
+
+	New()
+		..()
+		new /obj/item/clothing/under/rank/security/corrections/blue(src)
+		new /obj/item/clothing/under/rank/security/corrections/white(src)
 		return

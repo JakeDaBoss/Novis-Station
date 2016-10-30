@@ -518,8 +518,8 @@
 	desc = "Gen Pop Access (Public Minimal Security)"
 	access_type = ACCESS_REGION_GENERAL
 
-/var/const/access_prison_proc = 2101
-/datum/access/prison_proc
-	id = access_prison_proc
-	desc = "Prison Processing"
+/var/const/access_prison_security = 2101
+/datum/access/prison_security
+	id = access_prison_security
+	desc = "General Security"
 	access_type = ACCESS_REGION_CORRECTIONS
