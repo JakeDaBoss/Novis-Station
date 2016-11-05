@@ -147,6 +147,11 @@
 	desc = "To be Robust is not an action or a way of life, but a mental state. Only those with the force of Will strong enough to act during a crisis, saving friend from foe, are truly Robust. Stay Robust my friends."
 	icon_state = "goldenplaque"
 
+/obj/structure/sign/goldenplaque/inmatejobs
+	name = "!!INMATE JOBS!!"
+	desc = ""
+	icon_state = "goldenplaque"
+
 /obj/structure/sign/goldenplaque/security
 	name = "motivational plaque"
 	desc = "A plaque engraved with a generic motivational quote and picture. ' Greater love hath no man than this, that a man lay down his life for his friends. John 15:13 "

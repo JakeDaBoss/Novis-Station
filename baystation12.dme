@@ -2168,6 +2168,8 @@
 #include "maps\exodus\exodus_holodecks.dm"
 #include "maps\exodus\exodus_jobs.dm"
 #include "maps\exodus\exodus_shuttles.dm"
+#include "maps\exodus\prison\prison_elevator.dm"
+#include "maps\overmap_example\overmap_example_define.dm"
 #include "maps\torch\torch_areas.dm"
 #include "maps\~mapsystem\maps.dm"
 #include "maps\~mapsystem\maps_unit_testing.dm"

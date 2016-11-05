@@ -515,11 +515,29 @@
 /var/const/access_genpop = 1901
 /datum/access/genpop
 	id = access_genpop
-	desc = "Gen Pop Access (Public Minimal Security)"
+	desc = "Gen Pop (Public Minimal Security)"
 	access_type = ACCESS_REGION_GENERAL
 
-/var/const/access_prison_security = 2101
-/datum/access/prison_security
-	id = access_prison_security
-	desc = "General Security"
+/var/const/access_gensec = 2101
+/datum/access/gensec
+	id = access_gensec
+	desc = "General guard access"
+	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_guard_rooms = 2102
+/datum/access/guard_rooms
+	id = access_guard_rooms
+	desc = "Guard Rooms"
+	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_guardequip = 2103
+/datum/access/guardequip
+	id = access_guardequip
+	desc = "Guard Equipment"
+	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_adminmain = 2301
+/datum/access/adminmain
+	id = access_adminmain
+	desc = "Main Admin"
 	access_type = ACCESS_REGION_CORRECTIONS

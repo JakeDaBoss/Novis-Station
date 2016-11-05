@@ -22,7 +22,7 @@
 	l_pocket = /obj/item/device/flash
 	id_type = /obj/item/weapon/card/id/security/warden
 	pda_type = /obj/item/device/pda/warden
-
+/*
 /decl/hierarchy/outfit/job/security/detective
 	name = OUTFIT_JOB_NAME("Detective")
 	head = /obj/item/clothing/head/det
@@ -36,7 +36,7 @@
 	backpack = /obj/item/weapon/storage/backpack
 	satchel_one = /obj/item/weapon/storage/backpack/satchel_norm
 	backpack_contents = list(/obj/item/weapon/storage/box/evidence = 1)
-
+*/
 /decl/hierarchy/outfit/job/security/detective/forensic
 	name = OUTFIT_JOB_NAME("Forensic technician")
 	head = null
@@ -49,7 +49,7 @@
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/security
 	pda_type = /obj/item/device/pda/security
-
+/*
 /decl/hierarchy/outfit/job/security/blueshield
 	name = OUTFIT_JOB_NAME("Blueshield Guard")
 	uniform = /obj/item/clothing/under/tactical
@@ -58,7 +58,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/blueshield
 	id_type = /obj/item/weapon/card/id/blueshield
 	pda_type = /obj/item/device/pda/security
-
+*/
 /* NEEDS EDITING TO THE NEW FORMAT, THIS IS THE BLUESHIELD ITEMSSSSSS! //Omg go fuck yourself, this is here for documentation purposes!
 
 	equip(var/mob/living/carbon/human/H)

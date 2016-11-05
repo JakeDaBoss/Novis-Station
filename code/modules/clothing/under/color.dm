@@ -38,6 +38,41 @@
 	has_sensor = 2
 	sensor_mode = 3
 
+/*************
+*Prison Stuff*
+*************/
+
+/obj/item/clothing/under/corrections/orange
+	name = "orange corrections jumpsuit"
+	desc = "It's a prisoner jumpsuit that is usually given to new prisoners, unassigned prisoners or prisoners whose threat level has not been assessed yet. Its suit sensor controls are permanently set to the \"Fully On\" position."
+	icon_state = "prisonorange"
+	item_state = "o_suit"
+	worn_state = "prisonorange"
+	has_sensor = 2
+	sensor_mode = 3
+
+/obj/item/clothing/under/corrections/khaki
+	name = "khaki corrections jumpsuit"
+	desc = "It's the standard Prisoner jumpsuit. It's commonly awarded those that are free to mingle in lowsec. Its suit sensor controls are permanently set to the \"Fully On\" position."
+	icon_state = "prisonkhaki"
+	item_state = "o_suit"
+	worn_state = "prisonkhaki"
+	has_sensor = 2
+	sensor_mode = 3
+
+/obj/item/clothing/under/corrections/navy
+	name = "navy corrections jumpsuit"
+	desc = "It's the less common navy jumpsuit, which is given to inmates which have a known background in violence and are to be watched more stringently. Also commonly given to the Max Sec inmates.. Its suit sensor controls are permanently set to the \"Fully On\" position."
+	icon_state = "prisonnavy"
+	item_state = "o_suit"
+	worn_state = "prisonnavy"
+	has_sensor = 2
+	sensor_mode = 3
+
+/******************
+*End dPrison Stuff*
+******************/
+
 /obj/item/clothing/under/color/pink
 	name = "pink jumpsuit"
 	icon_state = "pink"

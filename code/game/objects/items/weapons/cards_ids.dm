@@ -327,8 +327,8 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/weapon/card/id/security/warden
 	job_access_type = /datum/job/warden
 
-/obj/item/weapon/card/id/security/detective
-	job_access_type = /datum/job/detective
+///obj/item/weapon/card/id/security/detective
+//	job_access_type = /datum/job/detective
 
 /obj/item/weapon/card/id/security/head
 	name = "identification card"
@@ -422,10 +422,10 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "trader"
 	access = list(access_merchant)
 
-/obj/item/weapon/card/id/blueshield
-	job_access_type = /datum/job/blueshield
-	desc = "A card issued to Blueshield operatives, dedicating their life to command!"
-	icon_state = "centcom"
+// /obj/item/weapon/card/id/blueshield
+//	job_access_type = /datum/job/blueshield
+//	desc = "A card issued to Blueshield operatives, dedicating their life to command!"
+//	icon_state = "centcom"
 
 // COMMISSARIAT ID-CARDS!
 /*

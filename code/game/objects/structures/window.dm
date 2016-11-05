@@ -462,10 +462,10 @@
 
 /obj/structure/window/reinforced
 	name = "reinforced window"
-	desc = "It looks rather strong. Might take a few good hits to shatter it."
+	desc = "It's got reinforced prison bars covering it, which makes it nearly impossible to shatter."
 	icon_state = "rwindow"
 	basestate = "rwindow"
-	maxhealth = 40.0
+	maxhealth = 150.0
 	reinf = 1
 	maximal_heat = T0C + 750
 	damage_per_fire_tick = 2.0

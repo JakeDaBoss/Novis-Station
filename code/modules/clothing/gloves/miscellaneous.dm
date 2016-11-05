@@ -44,7 +44,7 @@
 	siemens_coefficient = 0.40
 	permeability_coefficient = 0.05
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 80, bullet = 60, laser = 50, energy = 25, bomb = 50, bio = 10, rad = 0)
 
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
@@ -55,6 +55,24 @@
 	desc = "These tactical gloves are somewhat fire and impact-resistant."
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
+
+/*************
+*Prison stuff*
+*************/
+
+/obj/item/clothing/gloves/corrections/cutres
+	desc = "These tactical gloves are cut resistant, great for Officers!"
+	name = "\improper Cut Resistant Gloves"
+	icon_state = "black"
+	item_state = "bgblack"
+	siemens_coefficient = 0.40
+	permeability_coefficient = 0.05
+	force = 5
+	armor = list(melee = 50, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
+
+/*****************
+*End Prison Stuff*
+*****************/
 
 /obj/item/clothing/gloves/thick/black
 	desc = "These black gloves are usually worn by Security officers."

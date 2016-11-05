@@ -464,7 +464,7 @@
 					*************/
 /obj/structure/closet/secure_closet/corrections/intake
 	name = "intake locker"
-	req_access = list(access_prison_security)
+	req_access = list(access_gensec)
 	icon_state = "sec1"
 	icon_closed = "sec"
 	icon_locked = "sec1"
@@ -481,8 +481,8 @@
 		return
 
 /obj/structure/closet/secure_closet/corrections/co_equipment
-	name = "equipment locker"
-	req_access = list(access_prison_security)
+	name = "CO equipment locker"
+	req_access = list(access_guardequip)
 	icon_state = "sec1"
 	icon_closed = "sec"
 	icon_locked = "sec1"
@@ -492,6 +492,14 @@
 
 	New()
 		..()
+//		new /obj/item/weapon/cartridge/security(src)
+		new /obj/item/device/radio/headset/headset_sec(src)
+		new /obj/item/weapon/storage/belt/security(src)
+		new /obj/item/device/flash(src)
+		new /obj/item/weapon/reagent_containers/spray/pepper(src)
+		new /obj/item/weapon/melee/baton/loaded(src)
+		new /obj/item/clothing/glasses/sunglasses/sechud(src)
 		new /obj/item/clothing/under/rank/security/corrections/blue(src)
 		new /obj/item/clothing/under/rank/security/corrections/white(src)
+		new /obj/item/clothing/gloves/corrections/cutres(src)
 		return
