@@ -122,11 +122,11 @@ Please contact me on #coderbus IRC. ~Carn x
 #define GLOVES_LAYER			8
 #define BELT_LAYER				9
 #define SUIT_LAYER				10
-#define TAIL_LAYER				11		//bs12 specific. this hack is probably gonna come back to haunt me
-#define GLASSES_LAYER			12
-#define BELT_LAYER_ALT			13
-#define SUIT_STORE_LAYER		14
-#define BACK_LAYER				15
+#define GLASSES_LAYER			11
+#define BELT_LAYER_ALT			12
+#define SUIT_STORE_LAYER		13
+#define BACK_LAYER				14
+#define TAIL_LAYER				15
 #define HAIR_LAYER				16		//TODO: make part of head layer?
 #define EARS_LAYER				17
 #define FACEMASK_LAYER			18
