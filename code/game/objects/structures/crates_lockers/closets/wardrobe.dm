@@ -447,3 +447,23 @@
 	new /obj/item/weapon/storage/briefcase(src)
 	new /obj/item/weapon/storage/briefcase(src)
 	return
+
+/*************
+*Prison stuff*
+*************/
+
+/obj/structure/closet/wardrobe/corrections/cargo
+	name = "cargo wardrobe"
+	desc = "It's a storage unit for regulation prisoner work attire."
+	icon_state = "orange"
+	icon_closed = "orange"
+
+/obj/structure/closet/wardrobe/orange/New()
+	..()
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	new /obj/item/clothing/gloves/corrections/cargoworking(src)
+	return

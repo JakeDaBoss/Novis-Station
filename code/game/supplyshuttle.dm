@@ -21,6 +21,11 @@ var/list/mechtoys = list(
 	/obj/item/toy/prize/phazon
 )
 
+/obj/item/weapon/paper/corrections/cargo
+	name = "Cargo Procedures"
+	info = "<b>The following procedures are set in place for you, the new Chief Supply Officer, to make sure the cargo department runs according to SCG policies.<BR> To order things, send a relay message to the purchasing administrator, he or she will fill out your order and call the shuttle every thirty minutes if there's an order or export ready. <BR><B>ALL ORDERS MUST BE MOVED BY AN ENGINEER, CORRECTIONS OFFICER OR YOURSELF. DO NOT LET INMATES WANDER OFF WITH CRATES.</B><BR>For exports, contact the exports administrator, and fax all export manifests to their office. They will send a stamped version back, that one goes into the locker/closet/storage method used and the copy in your fax machine goes into the file cabinet in your office. <BR>At the end of your crew shift, you will take all papers, put them in a folder, and give it to administration before clocking out.<BR><BR><b>KEEP IN MIND!!! That if you forge or falsify certain orders, you will be held accountable, and will be placed under arrest under section 3B in the Sol Government Procedures lawbook."
+
+
 /obj/item/weapon/paper/manifest
 	name = "supply manifest"
 	var/is_copy = 1

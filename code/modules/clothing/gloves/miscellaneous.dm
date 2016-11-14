@@ -36,6 +36,13 @@
 	icon_state = "forensic"
 	item_state = "bgloves"
 
+/obj/item/clothing/gloves/corrections/cargoworking
+	desc = "These work gloves are thick and protects you from work-related accidents."
+	name = "work gloves"
+	icon_state = "black"
+	item_state = "bgloves"
+	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+
 /obj/item/clothing/gloves/thick
 	desc = "These work gloves are thick and fire-resistant."
 	name = "work gloves"

@@ -9,7 +9,7 @@
 	icon_keyboard = "tech_key"
 	icon_screen = "request"
 	light_color = "#b88b2e"
-	req_access = list(access_cargo)
+	req_access = list(access_cso)
 	circuit = /obj/item/weapon/circuitboard/supplycomp
 	var/can_order_contraband = 0
 	var/activeterminal = 0

@@ -10,6 +10,14 @@
 	icon_state = "carpet"
 	initial_flooring = /decl/flooring/carpet
 
+/turf/simulated/floor/desert
+	name = "desert sand"
+	base_name = "desert sand"
+	desc = "Uncomfortably gritty."
+	icon_state = "asteroid"
+	icon = 'icons/turf/flooring/asteroid.dmi'
+	initial_flooring = null
+
 /turf/simulated/floor/bluegrid
 	name = "mainframe floor"
 	icon = 'icons/turf/flooring/circuit.dmi'

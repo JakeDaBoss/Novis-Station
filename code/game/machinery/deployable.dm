@@ -187,12 +187,12 @@ for reference:
 			if (src.health < src.maxhealth)
 				src.health = src.maxhealth
 				src.emagged = 0
-				src.req_access = list(access_security)
+				src.req_access = list(access_gensec)
 				visible_message("<span class='warning'>[user] repairs \the [src]!</span>")
 				return
 			else if (src.emagged > 0)
 				src.emagged = 0
-				src.req_access = list(access_security)
+				src.req_access = list(access_gensec)
 				visible_message("<span class='warning'>[user] repairs \the [src]!</span>")
 				return
 			return

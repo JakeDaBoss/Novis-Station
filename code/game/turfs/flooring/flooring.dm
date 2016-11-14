@@ -71,6 +71,12 @@ var/list/flooring_types
 	build_type = null
 	flags = TURF_HAS_EDGES | TURF_HAS_CORNERS | TURF_REMOVE_CROWBAR | TURF_CAN_BURN
 
+/decl/flooring/carpet/desert
+	name = "desert sand"
+	icon_base = "asteroid"
+	build_type = null
+	flags = TURF_HAS_EDGES | TURF_HAS_CORNERS
+
 /decl/flooring/tiling
 	name = "floor"
 	desc = "Scuffed from the passage of countless greyshirts."

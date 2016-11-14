@@ -149,7 +149,12 @@
 
 /obj/structure/sign/goldenplaque/inmatejobs
 	name = "!!INMATE JOBS!!"
-	desc = ""
+	desc = "!!INMATE JOBS!! <br>Head Chef: 1<br>Kitchen worker: 5<br> Custodial: 4<br> Groundscrew: 5<br> Electrical Workers: 7<br> Laundry: 4<br> Librarian: 3<br> Commissary sales: 2"
+	icon_state = "goldenplaque"
+
+/obj/structure/sign/goldenplaque/inmatejobs1
+	name = "!!GUARD NOTICE!!"
+	desc = "!!GUARD NOTICE!! JOBS ARE A PRIVILEGE, NOT A RIGHT. REVOKE WORK DUTY OF OFFENDERS."
 	icon_state = "goldenplaque"
 
 /obj/structure/sign/goldenplaque/security

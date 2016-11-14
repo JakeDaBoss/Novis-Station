@@ -512,32 +512,51 @@
 * Prison Access *
 ****************/
 
-/var/const/access_genpop = 1901
+/var/const/access_genpop = 1900
 /datum/access/genpop
 	id = access_genpop
 	desc = "Gen Pop (Public Minimal Security)"
 	access_type = ACCESS_REGION_GENERAL
 
-/var/const/access_gensec = 2101
-/datum/access/gensec
-	id = access_gensec
-	desc = "General guard access"
+/var/const/access_genstaff = 2000
+/datum/access/genstaff
+	id = access_genstaff
+	desc = "General Staff"
 	access_type = ACCESS_REGION_CORRECTIONS
 
-/var/const/access_guard_rooms = 2102
+/var/const/access_gensec = 2100
+/datum/access/gensec
+	id = access_gensec
+	desc = "General Security"
+	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_guard_rooms = 2101
 /datum/access/guard_rooms
 	id = access_guard_rooms
 	desc = "Guard Rooms"
 	access_type = ACCESS_REGION_CORRECTIONS
 
-/var/const/access_guardequip = 2103
+/var/const/access_guardequip = 2102
 /datum/access/guardequip
 	id = access_guardequip
 	desc = "Guard Equipment"
 	access_type = ACCESS_REGION_CORRECTIONS
 
-/var/const/access_adminmain = 2301
+/var/const/access_guardcaptain = 2103
+/datum/access/captain
+	id = access_captain
+	desc = "Captain's Office"
+	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_adminmain = 2300
 /datum/access/adminmain
 	id = access_adminmain
 	desc = "Main Admin"
 	access_type = ACCESS_REGION_CORRECTIONS
+
+/var/const/access_cso = 2400
+/datum/access/cso
+	id = access_cso
+	desc = "Chief Supply Officer"
+	access_type = ACCESS_REGION_CORRECTIONS
+
