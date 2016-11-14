@@ -84,6 +84,7 @@
 		#undef S4
 		#undef S1
 
+
 // Converts a string into a list by splitting the string at each delimiter found. (discarding the seperator)
 /proc/splittext(text, delimiter="\n")
 	var/delim_len = length(delimiter)

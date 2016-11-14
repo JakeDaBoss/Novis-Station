@@ -28,6 +28,7 @@ var/list/admin_ranks = list()								//list of all ranks with associated rights
 				if("@","prev")					rights |= previous_rights
 				if("buildmode","build")			rights |= R_BUILDMODE
 				if("admin")						rights |= R_ADMIN
+//				if("auditor")					rights |= R_AUDITOR
 				if("ban")						rights |= R_BAN
 				if("fun")						rights |= R_FUN
 				if("server")					rights |= R_SERVER
