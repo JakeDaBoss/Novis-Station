@@ -9,7 +9,7 @@
 	query.Execute()
 	while(query.NextRow())
 		voted = 1
-			break
+		break
 
 	if(!voted)
 		privacy_poll()
