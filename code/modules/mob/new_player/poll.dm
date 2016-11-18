@@ -84,7 +84,7 @@
 	establish_db_connection()
 	if(dbcon.IsConnected())
 
-		var/DBQuery/select_query = dbcon.NewQuery("SELECT starttime, endtime, question, polltype, multiplechoiceoptions FROM erro_poll_question WHERE id = [pollid]")
+		var/DBQuery/select_query = dbcon.NewQuery("SELECT starttime, endtime, question, polltype FROM erro_poll_question WHERE id = [pollid]")
 		select_query.Execute()
 
 		var/pollstarttime = ""
@@ -345,7 +345,7 @@
 	establish_db_connection()
 	if(dbcon.IsConnected())
 
-		var/DBQuery/select_query = dbcon.NewQuery("SELECT starttime, endtime, question, polltype, multiplechoiceoptions FROM erro_poll_question WHERE id = [pollid] AND Now() BETWEEN starttime AND endtime")
+		var/DBQuery/select_query = dbcon.NewQuery("SELECT starttime, endtime, question, polltype FROM erro_poll_question WHERE id = [pollid] AND Now() BETWEEN starttime AND endtime")
 		select_query.Execute()
 
 		var/validpoll = 0
@@ -355,8 +355,8 @@
 			if(select_query.item[4] != "OPTION" && select_query.item[4] != "MULTICHOICE")
 				return
 			validpoll = 1
-			if(select_query.item[5])
-				multiplechoiceoptions = text2num(select_query.item[5])
+//			if(select_query.item[5])
+//				multiplechoiceoptions = text2num(select_query.item[5])
 			break
 
 		if(!validpoll)
