@@ -356,7 +356,7 @@
 				return
 			validpoll = 1
 //			if(select_query.item[5])
-//				multiplechoiceoptions = text2num(select_query.item[5])
+//				multiplechoiceoptions = text2num(select_query.item[5]) // Uncomment these two lines once "multiplechoiceoptions" is added to the database. Ask Oliver for more info.
 			break
 
 		if(!validpoll)
