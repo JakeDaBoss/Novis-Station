@@ -462,6 +462,34 @@
 					/*************
 					*Prison stuff*
 					*************/
+/obj/structure/closet/secure_closet/corrections/warden
+	name = "captain's locker"
+	req_access = list(access_captain)
+	icon_state = "capsecure1"
+	icon_closed = "capsecure"
+	icon_locked = "capsecure1"
+	icon_opened = "capsecureopen"
+	icon_broken = "capsecurebroken"
+	icon_off = "capsecureoff"
+
+	New()
+		..()
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/captain(src)
+		else
+			new /obj/item/weapon/storage/backpack/satchel_cap(src)
+		if(prob(50))
+			new /obj/item/clothing/under/suit_jacket/red(src)
+		else
+			new /obj/item/clothing/under/suit_jacket/tan
+		new /obj/item/weapon/cartridge/captain(src)
+		new /obj/item/clothing/shoes/brown(src)
+		new /obj/item/device/radio/headset/heads/captain(src)
+		new /obj/item/clothing/gloves/captain(src)
+		new /obj/item/weapon/gun/energy/gun(src)
+		return
+
+
 /obj/structure/closet/secure_closet/corrections/intake
 	name = "intake locker"
 	req_access = list(access_gensec)

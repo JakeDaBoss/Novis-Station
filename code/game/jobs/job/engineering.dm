@@ -6,7 +6,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the warden"
 	selection_color = "#7f6e2c"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -30,8 +30,8 @@
 	department = "Engineering"
 	department_flag = ENG
 	faction = "Station"
-	total_positions = 8
-	spawn_positions = 7
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the chief engineer"
 	selection_color = "#5b4d20"
 	economic_modifier = 5

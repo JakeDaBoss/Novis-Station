@@ -59,7 +59,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	department_flag = COM|CRG
 	faction = "Station"
 	total_positions = 1
-	spawn_positions = 1
+	spawn_positions = 2
 	supervisors = "the purchasing and exports administrators"
 	selection_color = "#2f2f7f"
 	req_admin_notify = 1
